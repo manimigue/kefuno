@@ -6,7 +6,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import {selectPlayed, savePlayed} from '../store/video'
 
 import Pic from '../img/homepic.png'
-import Video from  '../video/2_チューニング.mov'
+import Video from  '../video/video.mov'
 import '../sass/main/home.scss'
 import News from './News'
 
