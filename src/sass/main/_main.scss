@@ -1,0 +1,15 @@
+@use '../mixin/window';
+
+@mixin setMargin {
+  margin: 0 2px;
+  @include window.smallmiddle {
+    margin: 0 20px;
+  }
+  @include window.middlebig {
+    margin: 0 10%;
+  }
+  @include window.minbig {
+    width: window.$middle - 100px;
+    margin: auto;
+  }
+}

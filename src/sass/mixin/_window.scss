@@ -1,0 +1,68 @@
+@use './media';
+
+$small: 460px;
+$sm: 576px;
+$middle: 732px;
+$md: 768px;
+$big: 850px;
+$max: 1018px;
+
+@mixin smallmiddle {
+  @include media.mediaminmax($small,$middle){
+    @content;
+  }
+}
+
+@mixin smallbig {
+  @include media.mediaminmax($small,$big){
+    @content;
+  }
+}
+
+@mixin smallmax {
+  @include media.mediaminmax($small,$max){
+    @content;
+  }
+}
+
+@mixin middlebig {
+  @include media.mediaminmax($middle,$big){
+    @content;
+  }
+}
+
+@mixin middlemax {
+  @include media.mediaminmax($middle,$max){
+    @content;
+  }
+}
+
+@mixin bigmax {
+  @include media.mediaminmax($big,$max){
+    @content;
+  }
+}
+
+@mixin minsmall {
+  @include media.mediamin($small){
+    @content;
+  }
+}
+
+@mixin minmiddle {
+  @include media.mediamin($middle){
+    @content;
+  }
+}
+
+@mixin minbig {
+  @include media.mediamin($big){
+    @content;
+  }
+}
+
+@mixin minmax {
+  @include media.mediamin($max){
+    @content;
+  }
+}

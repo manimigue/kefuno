@@ -1,0 +1,59 @@
+.sidebarContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+}
+@media only screen and (min-width: 460px) and (max-width: 732px) {
+  .sidebarContainer {
+    width: 410px;
+  }
+}
+.sidebarContainer .sidebarMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  background-color: #A4C2A8;
+  padding-top: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3rem;
+  list-style: none;
+}
+.sidebarContainer .sidebarMenu * {
+  display: block;
+  margin: 0.5em 0;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.sidebarContainer .sidebarMenu * a {
+  z-index: 4;
+  color: #70798C;
+}
+.sidebarContainer .sidebarContent {
+  z-index: 3;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 5rem;
+}
+.sidebarContainer .sidebarContent .sidebarButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A4C2A8;
+  color: #70798C;
+  width: auto;
+  height: 5rem;
+}
+.sidebarContainer .sidebarContent .sidebarButton .buttonText {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+/*# sourceMappingURL=sidebar.css.map */
