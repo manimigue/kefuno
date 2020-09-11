@@ -1,7 +1,7 @@
 {
   "name": "kefuno",
   "version": "0.1.0",
-  "homepage": "https://manimigue.github.io/kefuno",
+  "homepage": "https://manimigue.github.io/kefuno/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -30,7 +30,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "react-scripts build && gh-pages -d build"
+    "deploy": "react-scripts build && gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
