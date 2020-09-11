@@ -22,7 +22,7 @@ history.listen(({ pathname }) => {
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router history={history}>
+      <Router history={history} basename='/kefuno'>
         <App/>
       </Router>
     </Provider>
