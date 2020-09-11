@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kefuno/static/css/main.f88156b0.chunk.css",
-    "main.js": "/kefuno/static/js/main.91f06205.chunk.js",
-    "main.js.map": "/kefuno/static/js/main.91f06205.chunk.js.map",
+    "main.js": "/kefuno/static/js/main.d080b1f4.chunk.js",
+    "main.js.map": "/kefuno/static/js/main.d080b1f4.chunk.js.map",
     "reactPlayerDailyMotion.js": "/kefuno/static/js/reactPlayerDailyMotion.1338f02a.chunk.js",
     "reactPlayerDailyMotion.js.map": "/kefuno/static/js/reactPlayerDailyMotion.1338f02a.chunk.js.map",
     "reactPlayerFacebook.js": "/kefuno/static/js/reactPlayerFacebook.364f29c6.chunk.js",
@@ -32,17 +32,17 @@
     "static/js/14.8779be62.chunk.js": "/kefuno/static/js/14.8779be62.chunk.js",
     "static/js/14.8779be62.chunk.js.map": "/kefuno/static/js/14.8779be62.chunk.js.map",
     "index.html": "/kefuno/index.html",
-    "precache-manifest.42770ca4e26855e0473a6922d0f26b97.js": "/kefuno/precache-manifest.42770ca4e26855e0473a6922d0f26b97.js",
+    "precache-manifest.551ee759998279054d83b240200aca85.js": "/kefuno/precache-manifest.551ee759998279054d83b240200aca85.js",
     "service-worker.js": "/kefuno/service-worker.js",
     "static/css/main.f88156b0.chunk.css.map": "/kefuno/static/css/main.f88156b0.chunk.css.map",
     "static/js/14.8779be62.chunk.js.LICENSE.txt": "/kefuno/static/js/14.8779be62.chunk.js.LICENSE.txt",
-    "static/media/2_チューニング.mov": "/kefuno/static/media/2_チューニング.ee77b34b.mov",
-    "static/media/homepic.png": "/kefuno/static/media/homepic.d924895a.png"
+    "static/media/homepic.png": "/kefuno/static/media/homepic.d924895a.png",
+    "static/media/video.mov": "/kefuno/static/media/video.66e3470e.mov"
   },
   "entrypoints": [
     "static/js/runtime-main.5e21591f.js",
     "static/js/14.8779be62.chunk.js",
     "static/css/main.f88156b0.chunk.css",
-    "static/js/main.91f06205.chunk.js"
+    "static/js/main.d080b1f4.chunk.js"
   ]
 }
