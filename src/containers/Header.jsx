@@ -7,8 +7,6 @@ import Link from '../component/Link'
 
 import '../sass/header/header.scss'
 
-// import { saveHome } from '../'
-
 const Header = () => {
   const location = useLocation()
   console.log(location.pathname);
