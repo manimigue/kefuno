@@ -1,0 +1,63 @@
+@use './main';
+@use '../mixin/window';
+
+.ticket {
+  @include main.setMargin;
+
+  
+  .ticket-form{
+    button {
+      margin: 3px;
+      margin-top: 5px;
+    }
+    h5{
+      margin-top: 20px;
+    }
+    input,textarea{
+      display: block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top : 10px;
+      margin-bottom : 30px;
+      padding : 18px;
+      font-size : 18px;
+      border : 1px solid #dee7ec;
+    }
+    .submit{
+      background-color : #dee7ec;
+      color : #889eab;
+      transition: .3s ease;
+      &:hover{
+        background-color : #b7d4e4;
+        color: rgb(136, 86, 223);
+        cursor: pointer;
+      }
+    }
+    @include window.minmiddle{
+      input,textarea,select {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  
+    @include window.middlemax{
+      input,textarea{
+        width : 60%;
+      }
+      select{
+        width: 70%;
+      }
+    }
+  
+    @include window.minmax{
+      input,textarea{
+        width : 50%;
+      }
+      select{
+        width: 60%;
+      }
+    }
+  }
+}

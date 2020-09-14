@@ -1,15 +1,12 @@
 import React from 'react'
 import { Link as RouterLink } from 'react-router-dom';
 
-const Link = ({to, children}) => {
+import '../sass/link/link.scss'
+
+const Link = ({to, children, className}) => {
   return (
     <RouterLink to={to} 
-      style={{
-        textDecoration:"none",
-        color: "black",
-        border: "none",
-        outline: 0
-      }}>
+      className={"link " + className}>
         {children}
       </RouterLink>
   )

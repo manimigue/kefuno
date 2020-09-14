@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    #root {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+      div.main {
+        flex: 1 0 auto;
+      }
+    }
+  }
+}

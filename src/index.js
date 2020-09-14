@@ -5,9 +5,11 @@ import './index.css';
 import App from './App';
 import store from './store';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import * as serviceWorker from './serviceWorker';
+
+import './sass/index.scss'
 
 ReactGA.initialize('UA-177620795-1');
 const history = createBrowserHistory({

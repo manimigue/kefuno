@@ -2,13 +2,11 @@
 
 $color: var.$color-dark;
 
+// must write its and div's width and height when using
 .burger {
   display: flex;
-  margin: 1em 2em 1em 1em;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -19,8 +17,6 @@ $color: var.$color-dark;
   }
 
   div {
-    width: 2rem;
-    height: 0.25rem;
     background: $color;
     border-radius: 10px;
     transition: all 0.3s linear;

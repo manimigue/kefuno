@@ -9,8 +9,6 @@ import '../sass/header/header.scss'
 
 const Header = () => {
   const location = useLocation()
-  console.log(location.pathname);
-  
 
   const home = location.pathname !== "/"
 

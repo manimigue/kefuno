@@ -4,10 +4,24 @@
     "title":  "デモ",
     "date": "2020-09-11",
     "file": "demo.md",
+    "type": "markdown",
     "author": "三石ミゲール",
     "copied": [],
     "tag": [
       "お知らせ"
+    ]
+  },
+  {
+    "url": "demo2",
+    "title":  "デモ2",
+    "date": "2020-09-13",
+    "file": "demo2.md",
+    "type": "markdown",
+    "author": "三石ミゲール",
+    "copied": [],
+    "tag": [
+      "お知らせ",
+      "コラム"
     ]
   }
 ]

@@ -11,21 +11,29 @@ $color-bright: var.$color-bright;
   top: 0;
   right: 0;
   height: $height;
-  width: 150px;
+  width: 130px;
+
+  @include media.widthmin(window.$iphoneSE) {
+    width: 165px;
+  }
 
   .sidebarMenu {
     $side: 10%;
     position: fixed !important;
-    width: 60%;
+    width: 65%;
+    max-height: 100%;
   
     @include window.smallmiddle {
-      width: window.$small - 250px;
+      width: window.$small - 120px;
     }
     @include window.middlebig{
-      width: 200px;
+      width: 400px;
     }
     @include window.minbig {
-      width: window.$small - 250px;
+      width: window.$small - 100px;
+    }
+    @include window.hmaxsmall {
+      width:60%;
     }
 
     display: flex;
@@ -36,9 +44,11 @@ $color-bright: var.$color-bright;
     // max-height: 500px;
     background-color: $color-bright;
     padding-top: $height;
-    padding-left: $side ;
     padding-right: $side;
     padding-bottom: 3rem;
+    @include window.smallmax {
+      padding-left: $side;
+    }
 
     ul {
       list-style: none;
@@ -46,7 +56,7 @@ $color-bright: var.$color-bright;
       flex-direction: column;
       justify-content: space-around;
       height: 80%;
-      max-height: 500px;
+      max-height: 100vh;
       min-height: 350px;
 
       margin-block-start: 0;
@@ -55,10 +65,14 @@ $color-bright: var.$color-bright;
 
       * {
         display: block;
-        margin: 0.5em 0;
+        padding: 0.5em 0;
         font-size: 1.6rem;
         text-decoration: none;
         color: $color-dark;
+        @include window.hmaxsmall {
+          font-size: 6.1vh;
+          padding: 0;
+        }
       }
     }
   }
@@ -82,7 +96,23 @@ $color-bright: var.$color-bright;
       height: $height;
       .buttonText {
           display: inline-block;
-          margin-left: 2rem;
+          margin-left: 1rem;
+          @include media.widthmin(window.$iphoneSE) {
+            margin-left: 2rem;
+          }
+      }
+      button.burger {
+        margin: 1em;
+        width: 2rem;
+        height: 2rem;
+        div {
+          width: 2rem;
+          height: 0.25rem;
+        }
+
+        @include media.widthmin(window.$iphoneSE) {
+          margin-right: 2rem;
+        }
       }
     }
   }

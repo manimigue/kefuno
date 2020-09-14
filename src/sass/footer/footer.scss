@@ -1,0 +1,101 @@
+@use '../mixin/window';
+
+footer {
+  $top : 66px;
+  $links : 175px;
+  $cr : 22px;
+
+  @mixin setFooterHeight($links){
+    height: $top + $links + $cr;
+    .footerLinks {
+      height: $links;
+    }
+  }
+
+  @include setFooterHeight($links);
+
+  background-color: #000;
+  align-items: flex-start;
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  width: 100%;
+  line-height: 1.625rem;
+  .footerTop {
+    height: $top;
+    width: auto;
+    margin-left: 50px;
+  }
+
+  .footerLinks {
+    width: 100%;
+    text-align: center;
+    ul {
+      list-style: none;
+      display: grid;
+      justify-content: center;
+      grid-template-columns:  repeat(2,100px);
+      grid-template-rows: auto;
+      grid-column-gap: 70px;
+      grid-row-gap: 10px;
+      grid-auto-flow: row;
+      padding-inline-start: 0px;
+
+      .footerLink {
+        cursor: pointer;
+        display: inline-block;
+        color: white;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
+  .copyright {
+    height: $cr;
+    clear: both;
+    width: 100%;
+    color: #fff;
+    line-height: $cr;
+    font-size: 0.7em;
+    text-align: center;
+    p {
+      float: left;
+      margin: 0 0 0 10px;
+    }
+  }
+
+  @include window.smallmiddle {
+    @include setFooterHeight(135px);
+    .footerLinks ul {
+      grid-template-columns: repeat(3,100px);
+    }
+  }
+
+  @include window.middlebig {
+    @include setFooterHeight(118px);
+    .footerLinks ul {
+      grid-template-columns: repeat(4,100px);
+    }
+  }
+
+  @include window.middlebig {
+    @include setFooterHeight(118px);
+    .footerLinks ul {
+      grid-template-columns: repeat(5,80px);
+    }
+  }
+
+  @include window.minmax {
+    @include setFooterHeight(95px);
+    .footerLinks ul{
+      display: flex;
+      margin: 0px 20px 10px 20px;
+      &> *{
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

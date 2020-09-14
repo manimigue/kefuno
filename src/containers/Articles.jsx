@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from "prop-types";
 import { connect } from 'react-redux';
-
 import ReactGA from 'react-ga';
 import Fade from 'react-reveal/Fade';
 import { Search, Cancel } from '@material-ui/icons';
@@ -16,6 +16,11 @@ class Articles extends Component {
     date : true,
     more : false
   }
+
+  static propTypes = {
+    type: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+  };
 
   constructor(props) {
     super(props);
@@ -140,28 +145,28 @@ class Articles extends Component {
     }
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    if (nextProps.range !== false){
-      if (nextState.start < nextProps.range){
-        if (nextState.prevBut){
-          this.setState({prevBut:false})
-        }
-      } else {
-        if (!nextState.prevBut){
-          this.setState({prevBut:true})
-        }
-      }
-      if (nextState.end >= nextState.logPart.length){
-        if (nextState.nextBut){
-          this.setState({nextBut:false})
-        }
-      } else {
-        if (!nextState.nextBut){
-          this.setState({nextBut:true})
-        }
-      }
-    }
-  }
+  // componentWillUpdate(nextProps, nextState) {
+  //   if (nextProps.range !== false){
+  //     if (nextState.start < nextProps.range){
+  //       if (nextState.prevBut){
+  //         this.setState({prevBut:false})
+  //       }
+  //     } else {
+  //       if (!nextState.prevBut){
+  //         this.setState({prevBut:true})
+  //       }
+  //     }
+  //     if (nextState.end >= nextState.logPart.length){
+  //       if (nextState.nextBut){
+  //         this.setState({nextBut:false})
+  //       }
+  //     } else {
+  //       if (!nextState.nextBut){
+  //         this.setState({nextBut:true})
+  //       }
+  //     }
+  //   }
+  // }
 
   componentDidUpdate(prevProps, prevState) {
     if (this.props.tags !== false){
@@ -175,6 +180,27 @@ class Articles extends Component {
           } catch (e) {
             console.log(e);
           }
+        }
+      }
+    }
+
+    if (this.props.range !== false){
+      if (this.state.start < this.props.range){
+        if (this.state.prevBut){
+          this.setState({prevBut:false})
+        }
+      } else {
+        if (!this.state.prevBut){
+          this.setState({prevBut:true})
+        }
+      }
+      if (this.state.end >= this.state.logPart.length){
+        if (this.state.nextBut){
+          this.setState({nextBut:false})
+        }
+      } else {
+        if (!this.state.nextBut){
+          this.setState({nextBut:true})
         }
       }
     }
@@ -211,21 +237,22 @@ class Articles extends Component {
       const tagDiv = <div display="inline-block" className="tagDiv" key={i} ref={this[`tagRef${i}`]}>{articleTags}</div>
 
       return (
-        <li key={article.url} className='article-list' style={{cursor:"pointer"}}>
-          <div　className='article-list-title'>
+        <li key={article.url} className='articleList' style={{cursor:"pointer"}}>
             <Link
             key={article.url+'button'}
             to={this.articleURL(article.url)}
+          className='articleListTitle'
             >
               <h3 key={article.url+'h2'} className='article-title'>{article.title}</h3>
             </Link>
-          </div>
+          <div>
           { date ?
-            <div><Link key={article.url+'p'} className='article-date' to={this.articleURL(article.url)}><span>更新日:{article.date}</span></Link>{tagDiv}</div>
+              <Link key={article.url+'p'} className='article-date' to={this.articleURL(article.url)}><span>更新日:{article.date}</span></Link>
            : null
           }
-          {
-            more ?
+            {tagDiv}
+          </div>
+          { more ?
             <Link key={article.url+'more'} className='article-more' to={this.articleURL(article.url)}>…read more</Link>
              : null
           }
@@ -269,8 +296,9 @@ class Articles extends Component {
         className='tagSearch'
         onClick={() => this.switchTagDisp(tagDisp)}
         style={{textAlign:"center"}}
+        variant="link"
       >
-        <Search />
+        Search<Search />
       </Button>
     ) :
     null;
