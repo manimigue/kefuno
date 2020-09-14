@@ -1,4 +1,8 @@
 @use '../mixin/window';
+@use '../mixin/color';
+
+$dark: color.$dark;
+$bright: color.$bright;
 
 footer {
   $top : 66px;
@@ -14,12 +18,12 @@ footer {
 
   @include setFooterHeight($links);
 
-  background-color: #000;
+  background-color: $bright;
   align-items: flex-start;
   flex-shrink: 0;
   display: flex;
   flex-flow: column;
-  color: #fff;
+  color: $dark;
   width: 100%;
   line-height: 1.625rem;
   .footerTop {
@@ -45,7 +49,7 @@ footer {
       .footerLink {
         cursor: pointer;
         display: inline-block;
-        color: white;
+        color: $dark;
         border-bottom: 1px solid white;
       }
     }
@@ -55,7 +59,7 @@ footer {
     height: $cr;
     clear: both;
     width: 100%;
-    color: #fff;
+    color: $dark;
     line-height: $cr;
     font-size: 0.7em;
     text-align: center;

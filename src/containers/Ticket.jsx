@@ -88,7 +88,7 @@ class Tickets extends Component {
         { ticketSelect(1) } 
         { ticketTypes.length > 1 ? 
           Array.from(Array(ticketTypes.length -1 ), (v,num) => (
-            <Fade collapse when={num+2 <= ticketTypeNum}>{ticketSelect(num+2)}</Fade>
+            <Fade key={num} collapse when={num+2 <= ticketTypeNum}>{ticketSelect(num+2)}</Fade>
           ))
         : null
         }
@@ -112,6 +112,7 @@ class Tickets extends Component {
 
     const ticketForm = () => (
       <React.Fragment>
+        <h1 style={{fontFamily:'Baskerville Normal',fontWeight:"normal",fontSize:"42px"}}>AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
         <p>下記のフォームに入力していただき、送信してください。<br/>1 週間以内に確認の連絡を送らせて頂きます。</p>
         <form method="POST" action={"https://formspree.io/" + mail} >
           { ticketSelections() }

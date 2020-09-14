@@ -145,29 +145,6 @@ class Articles extends Component {
     }
   }
 
-  // componentWillUpdate(nextProps, nextState) {
-  //   if (nextProps.range !== false){
-  //     if (nextState.start < nextProps.range){
-  //       if (nextState.prevBut){
-  //         this.setState({prevBut:false})
-  //       }
-  //     } else {
-  //       if (!nextState.prevBut){
-  //         this.setState({prevBut:true})
-  //       }
-  //     }
-  //     if (nextState.end >= nextState.logPart.length){
-  //       if (nextState.nextBut){
-  //         this.setState({nextBut:false})
-  //       }
-  //     } else {
-  //       if (!nextState.nextBut){
-  //         this.setState({nextBut:true})
-  //       }
-  //     }
-  //   }
-  // }
-
   componentDidUpdate(prevProps, prevState) {
     if (this.props.tags !== false){
       const listWidth = this.listRef.current.offsetWidth
@@ -184,6 +161,7 @@ class Articles extends Component {
       }
     }
 
+    // previously in componentWillUpdate
     if (this.props.range !== false){
       if (this.state.start < this.props.range){
         if (this.state.prevBut){

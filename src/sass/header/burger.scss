@@ -1,8 +1,15 @@
 @use './var';
 
-$color: var.$color-dark;
-
-// must write its and div's width and height when using
+// must write its and div's width and height, color when using
+// .burger {
+//   width: ;
+//   height: ;
+//   div {
+//     width: ;
+//     height: ;
+//     background-color: ;
+//   }
+// }
 .burger {
   display: flex;
   flex-direction: column;
@@ -17,7 +24,6 @@ $color: var.$color-dark;
   }
 
   div {
-    background: $color;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

@@ -1,8 +1,9 @@
 @use './var';
+@use '../mixin/color';
 
 $height: var.$height;
 
-$color: var.$color-logo;
+$color: color.$bright;
 
 header {
   height: $height;

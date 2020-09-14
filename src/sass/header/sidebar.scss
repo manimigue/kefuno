@@ -1,40 +1,24 @@
 @use './var';
+@use  '../mixin/color';
 @use '../mixin/window';
-@use '../mixin/media';
 
 $height: var.$height;
-$color-dark: var.$color-dark;
-$color-bright: var.$color-bright;
+$color-dark: color.$dark;
+$color-bright: color.$bright;
 
 .sidebarContainer {
+  $burger-size: $height * 0.6;
   position: fixed;
   top: 0;
   right: 0;
   height: $height;
   width: 130px;
 
-  @include media.widthmin(window.$iphoneSE) {
-    width: 165px;
-  }
-
   .sidebarMenu {
-    $side: 10%;
+    $side: 12%;
     position: fixed !important;
-    width: 65%;
+    width: auto;
     max-height: 100%;
-  
-    @include window.smallmiddle {
-      width: window.$small - 120px;
-    }
-    @include window.middlebig{
-      width: 400px;
-    }
-    @include window.minbig {
-      width: window.$small - 100px;
-    }
-    @include window.hmaxsmall {
-      width:60%;
-    }
 
     display: flex;
     flex-direction: column;
@@ -46,32 +30,31 @@ $color-bright: var.$color-bright;
     padding-top: $height;
     padding-right: $side;
     padding-bottom: 3rem;
-    @include window.smallmax {
-      padding-left: $side;
-    }
 
     ul {
       list-style: none;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: 80%;
-      max-height: 100vh;
-      min-height: 350px;
+      flex: 1 0  auto;
 
       margin-block-start: 0;
       margin-block-end: 0;
       padding-inline-start: 40px;
 
+      max-height: 700px;
+
       * {
         display: block;
-        padding: 0.5em 0;
-        font-size: 1.6rem;
         text-decoration: none;
         color: $color-dark;
-        @include window.hmaxsmall {
-          font-size: 6.1vh;
-          padding: 0;
+
+        font-size: 6.1vh;
+        @include window.hsmallmax {
+          font-size: 2rem;
+        }
+        @include window.hminmax {
+          font-size: 3.1vh;
         }
       }
     }
@@ -81,7 +64,6 @@ $color-bright: var.$color-bright;
     z-index: 3;
     display: flex;
     flex-direction: row-reverse;
-    height: $height;
     .sidebarButton {
       position: absolute;
       top: 0;
@@ -93,25 +75,20 @@ $color-bright: var.$color-bright;
       background-color: $color-bright;
       color: $color-dark;
       width: auto;
-      height: $height;
+      padding-left: 1rem;
       .buttonText {
           display: inline-block;
-          margin-left: 1rem;
-          @include media.widthmin(window.$iphoneSE) {
-            margin-left: 2rem;
-          }
       }
       button.burger {
-        margin: 1em;
-        width: 2rem;
-        height: 2rem;
-        div {
-          width: 2rem;
-          height: 0.25rem;
-        }
+        $burger-margin: ($height - $burger-size) / 2;
+        margin: $burger-margin;
 
-        @include media.widthmin(window.$iphoneSE) {
-          margin-right: 2rem;
+        width: $burger-size;
+        height: $burger-size;
+        div {
+          width: $burger-size;
+          height: $burger-size / 8;
+          background-color: $color-dark;
         }
       }
     }

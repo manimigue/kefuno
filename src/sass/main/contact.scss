@@ -1,31 +1,22 @@
 @use './main';
+@use './form';
 @use '../mixin/window';
+@use '../mixin/color';
+
+$dark: color.$dark;
+$bright: color.$bright;
 
 .contact-form {
   @include main.setMargin;
-  input,textarea{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top : 10px;
-    margin-bottom : 30px;
-    padding : 18px;
-    font-size : 18px;
-    border : 1px solid #dee7ec;
-  }
+
+  @include form.input-textareStyle($dark);
+
+  @include form.submitStyle($bright, $dark);
+  
   textarea{
     height: 150px;
   }
-  .submit{
-    background-color : #dee7ec;
-    color : #889eab;
-    transition: .3s ease;
-    &:hover{
-      background-color : #b7d4e4;
-      color: rgb(136, 86, 223);
-      cursor: pointer;
-    }
-  }
+  
 
   @include window.minmiddle{
     input,textarea {

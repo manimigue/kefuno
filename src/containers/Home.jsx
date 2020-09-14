@@ -25,6 +25,8 @@ const Home = () => {
         <ReactPlayer 
           url={Video} 
           playing={playable} 
+          volume={0}
+          muted={true}
           onReady={() => setPlayable(true)} 
           width="100%" height="100%" 
           onEnded={() => dispatch(savePlayed())}

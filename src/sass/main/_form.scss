@@ -1,0 +1,31 @@
+@mixin input-textareStyle($border-color) {
+  input,textarea{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 10px;
+    margin-bottom : 30px;
+    padding : 18px;
+    font-size : 18px;
+    border : 1px solid $border-color;
+    border-radius: 5px;
+  }
+}
+
+@mixin submitStyle($background-color, $color) {
+  .submit{
+    background-color : $background-color;
+    color : $color;
+    background-image: linear-gradient($color, $color);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+    &:hover{
+      color : $background-color;
+      background-size: 100% 100%;
+      cursor: pointer;
+    }
+  }
+}
