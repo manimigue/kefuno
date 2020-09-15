@@ -40,9 +40,9 @@ const Home = () => {
           width="100%" height="auto"
           onEnded={() => dispatch(savePlayed())}
         />
-        <button onClick={() => dispatch(savePlayed())} className={playable ? "skip" : "skip loading"}>
+        {/* <button onClick={() => dispatch(savePlayed())} className={playable ? "skip" : "skip loading"}>
           <span>スキップ→</span>
-        </button>
+        </button> */}
       </div>}
       <img className="topImage" src={Pic} alt="kefuno. Home" />
       <News />
