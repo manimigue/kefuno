@@ -9,18 +9,19 @@ $link-margin-side: 10px;
 $ul-width: 80%;
 
 footer {
-
-
   background-color: $bright;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-shrink: 0;
   flex-flow: column;
   color: $dark;
   width: 100%;
   line-height: 1.625rem;
   .footerTop {
-    width: auto;
+    width: 90%;
+    @include window.minmax {
+      width: $ul-width;
+    }
   }
 
   .footerLinks {
