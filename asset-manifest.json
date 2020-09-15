@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/kefuno/static/css/main.13e5e330.chunk.css",
-    "main.js": "/kefuno/static/js/main.4b725edf.chunk.js",
-    "main.js.map": "/kefuno/static/js/main.4b725edf.chunk.js.map",
+    "main.css": "/kefuno/static/css/main.a8c0d59c.chunk.css",
+    "main.js": "/kefuno/static/js/main.8c7d39db.chunk.js",
+    "main.js.map": "/kefuno/static/js/main.8c7d39db.chunk.js.map",
     "reactPlayerDailyMotion.js": "/kefuno/static/js/reactPlayerDailyMotion.f7fb3db8.chunk.js",
     "reactPlayerDailyMotion.js.map": "/kefuno/static/js/reactPlayerDailyMotion.f7fb3db8.chunk.js.map",
     "reactPlayerFacebook.js": "/kefuno/static/js/reactPlayerFacebook.953bfc3f.chunk.js",
@@ -29,13 +29,13 @@
     "reactPlayerYouTube.js.map": "/kefuno/static/js/reactPlayerYouTube.56c5c376.chunk.js.map",
     "runtime-main.js": "/kefuno/static/js/runtime-main.14a7b130.js",
     "runtime-main.js.map": "/kefuno/static/js/runtime-main.14a7b130.js.map",
-    "static/js/14.9845d88a.chunk.js": "/kefuno/static/js/14.9845d88a.chunk.js",
-    "static/js/14.9845d88a.chunk.js.map": "/kefuno/static/js/14.9845d88a.chunk.js.map",
+    "static/js/14.f059963d.chunk.js": "/kefuno/static/js/14.f059963d.chunk.js",
+    "static/js/14.f059963d.chunk.js.map": "/kefuno/static/js/14.f059963d.chunk.js.map",
     "index.html": "/kefuno/index.html",
-    "precache-manifest.cc475a02c375534c121ca1dc2593c605.js": "/kefuno/precache-manifest.cc475a02c375534c121ca1dc2593c605.js",
+    "precache-manifest.d7f29f47bdef368ed585d51462e80af9.js": "/kefuno/precache-manifest.d7f29f47bdef368ed585d51462e80af9.js",
     "service-worker.js": "/kefuno/service-worker.js",
-    "static/css/main.13e5e330.chunk.css.map": "/kefuno/static/css/main.13e5e330.chunk.css.map",
-    "static/js/14.9845d88a.chunk.js.LICENSE.txt": "/kefuno/static/js/14.9845d88a.chunk.js.LICENSE.txt",
+    "static/css/main.a8c0d59c.chunk.css.map": "/kefuno/static/css/main.a8c0d59c.chunk.css.map",
+    "static/js/14.f059963d.chunk.js.LICENSE.txt": "/kefuno/static/js/14.f059963d.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/kefuno/static/media/baskvl.d4597625.woff",
     "static/media/demo1.md": "/kefuno/static/media/demo1.dea51f2f.md",
     "static/media/homepic.png": "/kefuno/static/media/homepic.90e2b8ce.png",
@@ -43,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.14a7b130.js",
-    "static/js/14.9845d88a.chunk.js",
-    "static/css/main.13e5e330.chunk.css",
-    "static/js/main.4b725edf.chunk.js"
+    "static/js/14.f059963d.chunk.js",
+    "static/css/main.a8c0d59c.chunk.css",
+    "static/js/main.8c7d39db.chunk.js"
   ]
 }
