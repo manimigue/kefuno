@@ -2,17 +2,23 @@
 @use  '../mixin/color';
 @use '../mixin/window';
 
-$height: var.$height;
+$height-l: var.$height-l;
+$height-s: var.$height-s;
 $color-dark: color.$dark;
 $color-bright: color.$bright;
 
 .sidebarContainer {
-  $burger-size: $height * 0.6;
+  $burger-size-s: $height-s * 0.6;
+  $burger-size-l: $height-l * 0.6;
   position: fixed;
   top: 0;
   right: 0;
-  height: $height;
+  height: $height-s;
   width: 130px;
+
+  @include window.minsmall {
+    height: $height-l;
+  }
 
   .sidebarMenu {
     $side: 12%;
@@ -27,9 +33,13 @@ $color-bright: color.$bright;
 
     // max-height: 500px;
     background-color: $color-bright;
-    padding-top: $height;
+    padding-top: $height-s;
     padding-right: $side;
     padding-bottom: 3rem;
+
+    @include window.minsmall {
+      padding-top: $height-l;
+    }
 
     ul {
       list-style: none;
@@ -80,15 +90,27 @@ $color-bright: color.$bright;
           display: inline-block;
       }
       button.burger {
-        $burger-margin: ($height - $burger-size) / 2;
+        $burger-margin: ($height-s - $burger-size-s) / 2;
         margin: $burger-margin;
 
-        width: $burger-size;
-        height: $burger-size;
+        width: $burger-size-s;
+        height: $burger-size-s;
         div {
-          width: $burger-size;
-          height: $burger-size / 8;
+          width: $burger-size-s;
+          height: $burger-size-s / 8;
           background-color: $color-dark;
+        }
+
+        @include window.minsmall {
+          $burger-margin: ($height-l - $burger-size-l) / 2;
+
+          width: $burger-size-l;
+          height: $burger-size-l;
+          div {
+            width: $burger-size-l;
+            height: $burger-size-l / 8;
+            background-color: $color-dark;
+          }
         }
       }
     }

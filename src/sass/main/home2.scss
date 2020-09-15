@@ -1,9 +1,10 @@
 @use '../mixin/color';
+@use '../mixin/window';
 
 $color: color.$bright;
 $background: color.$dark;
 
-.home {
+.home2 {
   .topImage {
     width: 100%;
     margin-bottom: 10px;
@@ -30,12 +31,44 @@ $background: color.$dark;
     div {
       video {
         height: 100vw * $video-height / $video-width !important;
-        z-index: -1;
+        z-index: 1;
       }
       justify-content: flex-start;
     }
+    button.skip {
+      // height: $skip-height;
+
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0;
+
+      cursor: pointer;
+
+      border: none;
+      background: transparent;
+      text-align: right;
+      color: rgb(0, 174, 255);
+      text-decoration: underline;
+      transition: opacity 2s;
+      opacity: 1;
+
+      &.loading {
+        opacity: 0;
+      }
+      span {
+        background-color: #0000009a;
+        padding: 2px;
+        border-radius: 3px;
+
+        // font-size: 3vw;
+        @include window.minmiddle {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }
+
 
 // .home {
 //   .topImage {
