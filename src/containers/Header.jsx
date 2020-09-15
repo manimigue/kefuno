@@ -11,10 +11,9 @@ const Header = () => {
   const location = useLocation()
 
   const home = location.pathname === "/" 
-  const home2 = location.pathname === "/home2"
 
   return (
-    <header className={home ? "": home2 ? "home2" : "nothome"}>
+    <header className={home ? "":  "nothome"}>
       <div className="logo" >
         <Link to="/">
           <h1>kefuno.</h1>
