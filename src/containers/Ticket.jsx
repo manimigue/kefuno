@@ -103,16 +103,8 @@ class Tickets extends Component {
       </React.Fragment>
     )
 
-    // for multiple ticket types
-    // <h5>券種{type}</h5>
-    // <Fade collapse when={2 <= ticketTypeNum}>{ ticketSelect(2) }</Fade>
-    // <Fade collapse when={3 <= ticketTypeNum}>{ ticketSelect(3) }</Fade>
-    // {this.state.ticketTypeNum < 3 ? <Button onClick={this.addTicket} className='add-ticketTypes'> + </Button> : null}
-    // {this.state.ticketTypeNum > 1 ? <Button onClick={this.reduceTicket} className='reduce-ticketTypes'> - </Button> : null}
-
     const ticketForm = () => (
       <React.Fragment>
-        <h1 style={{fontFamily:'Baskerville Normal',fontWeight:"normal",fontSize:"42px"}}>AaBbCcDdEeFfGgHhŞşIıİi Example</h1>
         <p>下記のフォームに入力していただき、送信してください。<br/>1 週間以内に確認の連絡を送らせて頂きます。</p>
         <form method="POST" action={"https://formspree.io/" + mail} >
           { ticketSelections() }

@@ -5,7 +5,7 @@ const Demo = () => {
   const [markdown, setMarkdown] = useState('loading...')
 
   useEffect(() => {
-    const path = require("../markdown/demo.md");
+    const path = require("../markdown/demo1.md");
 
     fetch(path)
     .then(response => {

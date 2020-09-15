@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactPlayer from 'react-player/lazy'
-import { Cancel } from '@material-ui/icons'
 import {useSelector, useDispatch} from 'react-redux'
 
 import {selectPlayed, savePlayed} from '../store/video'
@@ -16,22 +15,33 @@ const Home = () => {
   const dispatch = useDispatch();
 
   const [playable,setPlayable] = useState(false)
+  const [hide, setHide] = useState(played)
+
+  useEffect(() => {
+    if (played) {
+      setTimeout(() => {
+        setHide(true)
+      }, 2000)
+    }
+  },[played])
 
   return (
     <div className="home">
-      {played ? null : 
-      <div className="topVideo">
-        <Cancel onClick={() => dispatch(savePlayed())} />
+      {hide ? null : 
+      <div className={played ? "topVideo played" : "topVideo"}>
         <ReactPlayer 
           url={Video} 
           playing={playable} 
           volume={0}
           muted={true}
           onReady={() => setPlayable(true)} 
-          width="100%" height="100%" 
+          width="100%" height="auto"
           onEnded={() => dispatch(savePlayed())}
         />
-      </div> }
+        <button onClick={() => dispatch(savePlayed())} className={playable ? "skip" : "skip loading"}>
+          <span>スキップ→</span>
+        </button>
+      </div>}
       <img className="topImage" src={Pic} alt="kefuno. Home" />
       <News />
       <Twitter account='twitter'/>
