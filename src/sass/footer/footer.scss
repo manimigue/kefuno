@@ -4,63 +4,68 @@
 $dark: color.$dark;
 $bright: color.$bright;
 
+$link-width: 100px;
+$link-margin-side: 10px;
+$ul-width: 80%;
+
 footer {
-  $top : 66px;
-  $links : 175px;
-  $cr : 22px;
 
-  @mixin setFooterHeight($links){
-    height: $top + $links + $cr;
-    .footerLinks {
-      height: $links;
-    }
-  }
-
-  @include setFooterHeight($links);
 
   background-color: $bright;
+  display: flex;
   align-items: flex-start;
   flex-shrink: 0;
-  display: flex;
   flex-flow: column;
   color: $dark;
   width: 100%;
   line-height: 1.625rem;
   .footerTop {
-    height: $top;
     width: auto;
-    margin-left: 50px;
   }
 
   .footerLinks {
     width: 100%;
     text-align: center;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     ul {
       list-style: none;
-      display: grid;
-      justify-content: center;
-      grid-template-columns:  repeat(2,100px);
-      grid-template-rows: auto;
-      grid-column-gap: 70px;
-      grid-row-gap: 10px;
-      grid-auto-flow: row;
+      display: flex;
+      width: $ul-width;
+      margin: 10px auto;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
       padding-inline-start: 0px;
 
+      .footerLink, .filling-empty-space-childs {
+        width: $link-width;
+        margin-left: $link-margin-side;
+        margin-right: $link-margin-side;
+      }
+
       .footerLink {
+        margin-top: 10px;
+        margin-bottom: 20px;
         cursor: pointer;
         display: inline-block;
         color: $dark;
         border-bottom: 1px solid white;
       }
+
+      .filling-empty-space-childs {
+        height: 0;
+      }
     }
   }
 
   .copyright {
-    height: $cr;
     clear: both;
     width: 100%;
     color: $dark;
-    line-height: $cr;
     font-size: 0.7em;
     text-align: center;
     p {
@@ -68,38 +73,9 @@ footer {
       margin: 0 0 0 10px;
     }
   }
+}
 
-  @include window.smallmiddle {
-    @include setFooterHeight(135px);
-    .footerLinks ul {
-      grid-template-columns: repeat(3,100px);
-    }
-  }
-
-  @include window.middlebig {
-    @include setFooterHeight(118px);
-    .footerLinks ul {
-      grid-template-columns: repeat(4,100px);
-    }
-  }
-
-  @include window.middlebig {
-    @include setFooterHeight(118px);
-    .footerLinks ul {
-      grid-template-columns: repeat(5,80px);
-    }
-  }
-
-  @include window.minmax {
-    @include setFooterHeight(95px);
-    .footerLinks ul{
-      display: flex;
-      margin: 0px 20px 10px 20px;
-      &> *{
-        width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  }
+:export {
+  totalWidth: $link-width + $link-margin-side*2;
+  ulWidth: $ul-width;
 }

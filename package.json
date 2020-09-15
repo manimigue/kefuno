@@ -25,6 +25,7 @@
     "react-scripts": "3.4.3",
     "react-sidebar": "^3.0.2",
     "react-twitter-embed": "^3.0.3",
+    "react-use-dimensions": "^1.2.1",
     "styled-components": "^5.2.0"
   },
   "scripts": {
