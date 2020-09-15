@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import ReactPlayer from 'react-player/lazy'
 import {useSelector, useDispatch} from 'react-redux'
+import ReactPlayer from 'react-player/lazy'
 
 import {selectPlayed, savePlayed} from '../store/video'
+
+import News from './News'
+import Twitter from '../component/Twitter'
 
 import Pic from '../img/homepic.png'
 import Video from  '../video/video.mov'
 import '../sass/main/home.scss'
-import News from './News'
-import Twitter from '../component/Twitter'
 
 const Home = () => {
   const played = useSelector(selectPlayed);
@@ -32,6 +33,7 @@ const Home = () => {
         <ReactPlayer 
           url={Video} 
           playing={playable} 
+          playsinline 
           volume={0}
           muted={true}
           onReady={() => setPlayable(true)} 
