@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kefuno/static/css/main.df6508fa.chunk.css",
-    "main.js": "/kefuno/static/js/main.4465a7ca.chunk.js",
-    "main.js.map": "/kefuno/static/js/main.4465a7ca.chunk.js.map",
+    "main.js": "/kefuno/static/js/main.d98852ac.chunk.js",
+    "main.js.map": "/kefuno/static/js/main.d98852ac.chunk.js.map",
     "reactPlayerDailyMotion.js": "/kefuno/static/js/reactPlayerDailyMotion.5c6e0517.chunk.js",
     "reactPlayerDailyMotion.js.map": "/kefuno/static/js/reactPlayerDailyMotion.5c6e0517.chunk.js.map",
     "reactPlayerFacebook.js": "/kefuno/static/js/reactPlayerFacebook.e16c9986.chunk.js",
@@ -29,13 +29,13 @@
     "reactPlayerYouTube.js.map": "/kefuno/static/js/reactPlayerYouTube.d42d3719.chunk.js.map",
     "runtime-main.js": "/kefuno/static/js/runtime-main.8acff6f0.js",
     "runtime-main.js.map": "/kefuno/static/js/runtime-main.8acff6f0.js.map",
-    "static/js/14.d581ca64.chunk.js": "/kefuno/static/js/14.d581ca64.chunk.js",
-    "static/js/14.d581ca64.chunk.js.map": "/kefuno/static/js/14.d581ca64.chunk.js.map",
+    "static/js/14.dd4fac50.chunk.js": "/kefuno/static/js/14.dd4fac50.chunk.js",
+    "static/js/14.dd4fac50.chunk.js.map": "/kefuno/static/js/14.dd4fac50.chunk.js.map",
     "index.html": "/kefuno/index.html",
-    "precache-manifest.cbc6ba423fb0c9fc6b6ce0c7e7168ef0.js": "/kefuno/precache-manifest.cbc6ba423fb0c9fc6b6ce0c7e7168ef0.js",
+    "precache-manifest.23258e7daac94ab17b45358b666f5710.js": "/kefuno/precache-manifest.23258e7daac94ab17b45358b666f5710.js",
     "service-worker.js": "/kefuno/service-worker.js",
     "static/css/main.df6508fa.chunk.css.map": "/kefuno/static/css/main.df6508fa.chunk.css.map",
-    "static/js/14.d581ca64.chunk.js.LICENSE.txt": "/kefuno/static/js/14.d581ca64.chunk.js.LICENSE.txt",
+    "static/js/14.dd4fac50.chunk.js.LICENSE.txt": "/kefuno/static/js/14.dd4fac50.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/kefuno/static/media/baskvl.d4597625.woff",
     "static/media/demo1.md": "/kefuno/static/media/demo1.dea51f2f.md",
     "static/media/homepic.png": "/kefuno/static/media/homepic.90e2b8ce.png",
@@ -43,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8acff6f0.js",
-    "static/js/14.d581ca64.chunk.js",
+    "static/js/14.dd4fac50.chunk.js",
     "static/css/main.df6508fa.chunk.css",
-    "static/js/main.4465a7ca.chunk.js"
+    "static/js/main.d98852ac.chunk.js"
   ]
 }
