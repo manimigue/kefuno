@@ -13,6 +13,9 @@ install:
 script:
   - npm run build
 
+after_success:
+  - sh .travis-push.sh 
+
 deploy:
   provider: pages
   skip-cleanup: true
