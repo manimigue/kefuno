@@ -10,18 +10,23 @@ commit_country_json_files() {
   # Current month and year, e.g: Apr 2018
   dateAndMonth=`date "+%b %Y"`
   # Stage the modified files in src/
+  echo $dateAndMonth
   git add .
   # Create a new commit with a custom build message
   # with "[skip ci]" to avoid a build loop
   # and Travis build number for reference
+  echo "before commit"
   git commit -m "Travis update: $dateAndMonth (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
 }
 
 upload_files() {
   # Remove existing "origin"
+  echo "bofore rm remote"
   git remote rm origin
   # Add new "origin" with access token in the git URL for authentication
-  git remote add origin https://manimigue:${GH_TOKEN}@github.com/manimigue/kefuno.git #> /dev/null 2>&1
+  echo "before add remote"
+  git remote add origin https://${GH_TOKEN}@github.com/manimigue/kefuno.git #> /dev/null 2>&1
+  echo "before push"
   git push origin master --quiet
 }
 
