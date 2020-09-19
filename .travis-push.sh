@@ -25,7 +25,7 @@ upload_files() {
   git remote rm origin
   # Add new "origin" with access token in the git URL for authentication
   echo "before add remote"
-  git remote add origin https://${GH_TOKEN}@github.com/manimigue/kefuno.git #> /dev/null 2>&1
+  git remote add origin https://manimigue:${GH_TOKEN}@github.com/manimigue/kefuno.git #> /dev/null 2>&1
   echo "before push"
   git push origin master --quiet
 }
