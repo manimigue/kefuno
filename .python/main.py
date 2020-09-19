@@ -163,7 +163,7 @@ if __name__ == "__main__":
     file_path = os.path.join(upload_path, folder)
     try:
         if os.path.isfile(file_path) or os.path.islink(file_path):
-            os.unlink(file_path)
+            pass
         elif os.path.isdir(file_path):
             shutil.rmtree(file_path)
     except Exception as e:
