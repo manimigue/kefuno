@@ -117,6 +117,7 @@ def upload_files(folder):
   assets_path = ""
   if not "assets" in files:
     print("assetsが見つかりませんでした。")
+    os.mkdir(os.path.join(upload_path,"assets"))
   else:
     assets_path = os.path.realpath("assets")
   
