@@ -1,14 +1,1 @@
-[
-  {
-    "url": "demo1",
-    "title": "デモ1",
-    "date": "2020-09-11",
-    "file": "demo1.md",
-    "author": "三石ミゲール",
-    "copied": [],
-    "tag": [
-      "お知らせ"
-    ],
-    "id": 1
-  }
-]
+[{"id": 1, "copied": [], "file": "demo1.md", "tag": ["\u304a\u77e5\u3089\u305b"], "title": "\u30c7\u30e21", "author": "\u4e09\u77f3\u30df\u30b2\u30fc\u30eb", "date": "2020-09-11", "url": "demo1"}, {"id": 2, "copied": ["homepic.png"], "file": "news2_\u30c7\u30e22", "tag": ["\u304a\u77e5\u3089\u305b", "\u30b3\u30e9\u30e0"], "title": "\u30c7\u30e22", "author": "miguel", "date": "2020-09-19", "url": "news2_20200919"}]
