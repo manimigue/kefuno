@@ -41,7 +41,7 @@ def compile():
   import_assets = "\n".join(["import I" + str(i) +" from './assets/" + asset + "'" for i, asset in enumerate(copy_assets) ])
   dicts = ",\n".join(["  '" + asset + "' : I" + str(i) for i, asset in enumerate(copy_assets) ])
   
-  article_top = "\n".join([import_react,import_assets,"paths = {",dicts,"}"])
+  article_top = "\n".join([import_react,import_assets,"const paths = {",dicts,"}"])
 
   with open(os.path.join(python_path,"react_component.txt")) as f:
     article_component = f.read()
