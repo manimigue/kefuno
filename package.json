@@ -32,7 +32,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "travis": "python3 -V && python3 .python/main.py news src/news && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "react-scripts build && gh-pages -d build"

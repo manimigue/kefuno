@@ -13,8 +13,11 @@ cache:
 install:
   - npm install
 
+before_script:
+  - python3 .python/main.py news src/news
+
 script:
-  - npm run travis
+  - npm run build
 
 after_success:
   - sh .travis-push.sh 
