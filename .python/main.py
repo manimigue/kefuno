@@ -15,7 +15,7 @@ def compile():
   with open(md_path, 'r') as f:
     markdown = f.read()
   
-  upload_assets = os.listdir(assets_path)
+  upload_assets = os.listdir(assets_path) if assets_path else []
   all_assets = get_assets(markdown)
   copy_assets = []
   # assetが存在するか，存在しなければ既にアップロードされているかを確認
@@ -32,8 +32,11 @@ def compile():
   
   # 更新先にコピー
   for asset in copy_assets:
-    asset_path = os.path.join(assets_path,asset)
-    shutil.copy2(asset_path, os.path.join(articles_path,"assets"))
+    try:
+      asset_path = os.path.join(assets_path,asset)
+      shutil.copy2(asset_path, os.path.join(articles_path,"assets"))
+    except FileNotFoundError:
+      raise FileNotFoundError("assetsが見つからないないため，",asset,"がアップロードできません")
   
   with open(os.path.join(python_path,"react_imports.txt"),'r') as f:
     import_react = f.read()
@@ -117,9 +120,8 @@ def upload_files(folder):
   assets_path = ""
   if not "assets" in files:
     print("assetsが見つかりませんでした。")
-    os.mkdir(os.path.join(upload_path,"assets"))
   else:
-    assets_path = os.path.realpath("assets")
+    assets_path = os.path.abspath("assets")
   
   return md_path, config_path, assets_path
   
