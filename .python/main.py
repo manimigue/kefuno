@@ -69,7 +69,7 @@ def compile():
   return
 
 def get_assets(markdown):
-  all_assets = re.findall(r"[.]*[/]*assets/(.+\..+)", markdown)
+  all_assets = re.findall(r"[.]*[/]*assets/(.+\.[^\)]+)", markdown)
   return all_assets
 
 
