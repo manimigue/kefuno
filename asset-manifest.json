@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/kefuno/static/css/main.df6508fa.chunk.css",
-    "main.js": "/kefuno/static/js/main.0abdac39.chunk.js",
-    "main.js.map": "/kefuno/static/js/main.0abdac39.chunk.js.map",
+    "main.css": "/kefuno/static/css/main.e37f94d3.chunk.css",
+    "main.js": "/kefuno/static/js/main.928d442e.chunk.js",
+    "main.js.map": "/kefuno/static/js/main.928d442e.chunk.js.map",
     "reactPlayerDailyMotion.js": "/kefuno/static/js/reactPlayerDailyMotion.df816182.chunk.js",
     "reactPlayerDailyMotion.js.map": "/kefuno/static/js/reactPlayerDailyMotion.df816182.chunk.js.map",
     "reactPlayerFacebook.js": "/kefuno/static/js/reactPlayerFacebook.c11514f0.chunk.js",
@@ -32,9 +32,9 @@
     "static/js/14.c0412c8f.chunk.js": "/kefuno/static/js/14.c0412c8f.chunk.js",
     "static/js/14.c0412c8f.chunk.js.map": "/kefuno/static/js/14.c0412c8f.chunk.js.map",
     "index.html": "/kefuno/index.html",
-    "precache-manifest.9a8c7158f3809faf4bfc878357600b8c.js": "/kefuno/precache-manifest.9a8c7158f3809faf4bfc878357600b8c.js",
+    "precache-manifest.ec6bc573b18b135d268264ed031cc6ec.js": "/kefuno/precache-manifest.ec6bc573b18b135d268264ed031cc6ec.js",
     "service-worker.js": "/kefuno/service-worker.js",
-    "static/css/main.df6508fa.chunk.css.map": "/kefuno/static/css/main.df6508fa.chunk.css.map",
+    "static/css/main.e37f94d3.chunk.css.map": "/kefuno/static/css/main.e37f94d3.chunk.css.map",
     "static/js/14.c0412c8f.chunk.js.LICENSE.txt": "/kefuno/static/js/14.c0412c8f.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/kefuno/static/media/baskvl.d4597625.woff",
     "static/media/demo1.md": "/kefuno/static/media/demo1.dea51f2f.md",
@@ -47,7 +47,7 @@
   "entrypoints": [
     "static/js/runtime-main.82811b06.js",
     "static/js/14.c0412c8f.chunk.js",
-    "static/css/main.df6508fa.chunk.css",
-    "static/js/main.0abdac39.chunk.js"
+    "static/css/main.e37f94d3.chunk.css",
+    "static/js/main.928d442e.chunk.js"
   ]
 }
