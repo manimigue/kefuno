@@ -134,7 +134,12 @@ if __name__ == "__main__":
   with open(logs_path,'r') as f:
     logs = json.load(f)
 
-  os.chdir(upload_path)
+  try:
+    os.chdir(upload_path)
+  except FileNotFoundError:
+    os.mkdir(upload_path)
+    os.chdir(upload_path)
+  
   folders = [folder for folder in os.listdir() if os.path.isdir(folder)]
   for folder in folders:
     print("更新フォルダ : " , folder)
