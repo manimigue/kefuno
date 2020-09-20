@@ -44,6 +44,10 @@ def compile():
       shutil.copy2(asset_path, os.path.join(articles_path,"assets"))
     except FileNotFoundError: #以前のループでチェックしているが，念のため
       raise FileNotFoundError("assetsが見つからないないため，",asset,"がアップロードできません")
+    else:
+      print("  ",asset)
+  else:
+    print("以上をアップロードしました")
   
   with open(os.path.join(python_path,"react_imports.txt"),'r') as f:
     import_react = f.read()
@@ -79,7 +83,7 @@ def compile():
   return
 
 def get_sub_assets(markdown):
-  asset_regex = re.compile(r"(['\"(])(?:(?:[a-zA-Z]:|(?:\\\\|\/\/)[\w\.]+(?:\\|\/)[\w.$]+|\/[\w.]+)(?:(?:\\|\/)|(?:\\\\|\/\/))(?:[\w ]+(?:\\|\/))*|(?:\.[/\\])*)(assets[/\\])([\w. ]+[\.][a-zA-Z]+)(['\")])")
+  asset_regex = re.compile(r"(['\"(])(?:(?:[a-zA-Z]:|(?:\\\\|\/\/)[\w\.]+(?:\\|\/)[\w.$]+|\/[\w.]+)(?:(?:\\|\/)|(?:\\\\|\/\/))(?:[^/\\\n]+(?:\\|\/))*|(?:\.[/\\])*)(assets[/\\])([^/\\\n]+[\.][a-zA-Z]+)(['\")])")
   sub_markdown = asset_regex.sub(r"\1\2\3\4",markdown)
   all_assets = [match[2] for match in asset_regex.findall(markdown)]
   return sub_markdown, all_assets
