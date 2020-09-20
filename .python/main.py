@@ -11,12 +11,19 @@ def compile():
   id = max([log["id"] for log in logs]) + 1
   url = "news" + str(id) + "_" + config["url"]
 
-  shutil.copy(md_path, markdowns_path)
   with open(md_path, 'r') as f:
     markdown = f.read()
   
   upload_assets = os.listdir(assets_path) if assets_path else []
-  all_assets = get_assets(markdown)
+  markdown, all_assets = get_sub_assets(markdown)
+
+  md_file = os.path.split(md_path)[1]
+  new_md_path = os.path.join(markdowns_path,md_file)
+  if os.path.exists(new_md_path):
+    new_md_path = os.path.join(markdowns_path,url+".md")
+  with open(new_md_path, "w") as f:
+    f.write(markdown)
+  
   copy_assets = []
   # assetが存在するか，存在しなければ既にアップロードされているかを確認
   for asset in all_assets:
@@ -35,7 +42,7 @@ def compile():
     try:
       asset_path = os.path.join(assets_path,asset)
       shutil.copy2(asset_path, os.path.join(articles_path,"assets"))
-    except FileNotFoundError:
+    except FileNotFoundError: #以前のループでチェックしているが，念のため
       raise FileNotFoundError("assetsが見つからないないため，",asset,"がアップロードできません")
   
   with open(os.path.join(python_path,"react_imports.txt"),'r') as f:
@@ -71,9 +78,11 @@ def compile():
   
   return
 
-def get_assets(markdown):
-  all_assets = re.findall(r"[.]*[/]*assets/(.+\.[^\)]+)", markdown)
-  return all_assets
+def get_sub_assets(markdown):
+  asset_regex = re.compile(r"(['\"(])(?:(?:[a-zA-Z]:|(?:\\\\|\/\/)[\w\.]+(?:\\|\/)[\w.$]+|\/[\w.]+)(?:(?:\\|\/)|(?:\\\\|\/\/))(?:[\w ]+(?:\\|\/))*|(?:\.[/\\])*)(assets[/\\])([\w. ]+[\.][a-zA-Z]+)(['\")])")
+  sub_markdown = asset_regex.sub(r"\1\2\3\4",markdown)
+  all_assets = [match[2] for match in asset_regex.findall(markdown)]
+  return sub_markdown, all_assets
 
 
 # def upload(uploads, articles):
