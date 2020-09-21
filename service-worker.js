@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kefuno/precache-manifest.a0b07db6111cb64d5ef3f4f1339ae9d0.js"
+  "/kefuno/precache-manifest.6294ee34491075518e6d9710d166a210.js"
 );
 
 self.addEventListener('message', (event) => {

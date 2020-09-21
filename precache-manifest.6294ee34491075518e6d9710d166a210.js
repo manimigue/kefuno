@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2aefe9a21fbf0585baa6cb0d3dcb6fcf",
+    "revision": "4eb2961b3792bbf3644dde478b5622c5",
     "url": "/kefuno/index.html"
   },
   {
-    "revision": "15ec68f4298253048302",
+    "revision": "0553f0842f9d27b297b7",
     "url": "/kefuno/static/css/main.c134687e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kefuno/static/js/14.7c904016.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15ec68f4298253048302",
-    "url": "/kefuno/static/js/main.44a0aab8.chunk.js"
+    "revision": "0553f0842f9d27b297b7",
+    "url": "/kefuno/static/js/main.faa2d939.chunk.js"
   },
   {
     "revision": "f71bed5cc9df335cab3f",
