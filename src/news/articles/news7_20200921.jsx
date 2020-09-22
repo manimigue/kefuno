@@ -12,6 +12,8 @@ import I7 from '../markdown/assets/typoraex.png'
 import I8 from '../markdown/assets/style.png'
 import I9 from '../markdown/assets/upload1.png'
 import I10 from '../markdown/assets/upload2.png'
+import A1 from '../markdown/assets/kefuno.zip'
+import A2 from '../markdown/assets/kefunoStyle.zip'
 const paths = {
   'kefuno.drawio.png' : I0,
   'typora_download.png' : I1,
@@ -23,7 +25,9 @@ const paths = {
   'typoraex.png' : I7,
   'style.png' : I8,
   'upload1.png' : I9,
-  'upload2.png' : I10
+  'upload2.png' : I10,
+  'kefuno.zip' : A1,
+  'kefunoStyle.zip' : A2
 }
 
 export default () => {
