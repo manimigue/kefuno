@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import MarkdownRender from "@nteract/markdown";
 import replace_assets from '../../article/replace_assets';
-import I0 from './assets/kefuno.drawio.png'
-import I1 from './assets/typora_download.png'
-import I2 from './assets/typora_setting1.png'
-import I3 from './assets/assets2.png'
-import I4 from './assets/imgset4.png'
-import I5 from './assets/imgset3.png'
-import I6 from './assets/kefunoApp.png'
-import I7 from './assets/typoraex.png'
-import I8 from './assets/style.png'
-import I9 from './assets/upload1.png'
-import I10 from './assets/upload2.png'
+import I0 from '../markdown/assets/kefuno.drawio.png'
+import I1 from '../markdown/assets/typora_download.png'
+import I2 from '../markdown/assets/typora_setting1.png'
+import I3 from '../markdown/assets/assets2.png'
+import I4 from '../markdown/assets/imgset4.png'
+import I5 from '../markdown/assets/imgset3.png'
+import I6 from '../markdown/assets/kefunoApp.png'
+import I7 from '../markdown/assets/typoraex.png'
+import I8 from '../markdown/assets/style.png'
+import I9 from '../markdown/assets/upload1.png'
+import I10 from '../markdown/assets/upload2.png'
 const paths = {
   'kefuno.drawio.png' : I0,
   'typora_download.png' : I1,

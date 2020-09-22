@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import MarkdownRender from "@nteract/markdown";
 import replace_assets from '../../article/replace_assets';
-import I0 from './assets/homepic.png'
+import I0 from '../markdown/assets/homepic.png'
 const paths = {
   'homepic.png' : I0
 }

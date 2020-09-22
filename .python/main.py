@@ -52,7 +52,7 @@ def compile():
   with open(os.path.join(python_path,"react_imports.txt"),'r') as f:
     import_react = f.read()
   
-  import_assets = "\n".join(["import I" + str(i) +" from './assets/" + asset + "'" for i, asset in enumerate(copy_assets) ])
+  import_assets = "\n".join(["import I" + str(i) +" from '../markdown/assets/" + asset + "'" for i, asset in enumerate(copy_assets) ])
   dicts = ",\n".join(["  '" + asset + "' : I" + str(i) for i, asset in enumerate(copy_assets) ])
   
   article_top = "\n".join([import_react,import_assets,"const paths = {",dicts,"}"])

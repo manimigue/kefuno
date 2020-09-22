@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import MarkdownRender from "@nteract/markdown";
 import replace_assets from '../../article/replace_assets';
-import I0 from './assets/スクリーンショット 2020-05-06 19.34.28.png'
-import I1 from './assets/logo.png'
-import I2 from './assets/test.png'
-import I3 from './assets/test2.png'
+import I0 from '../markdown/assets/スクリーンショット 2020-05-06 19.34.28.png'
+import I1 from '../markdown/assets/logo.png'
+import I2 from '../markdown/assets/test.png'
+import I3 from '../markdown/assets/test2.png'
 const paths = {
   'スクリーンショット 2020-05-06 19.34.28.png' : I0,
   'logo.png' : I1,
