@@ -21,7 +21,7 @@ const Footer = () => {
   ));
 
   const spaces = links.map(link => (
-    <div className="filling-empty-space-childs" />
+    <div key={link.url} className="filling-empty-space-childs" />
   ))
 
   return (

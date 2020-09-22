@@ -12,8 +12,9 @@ class News extends Component {
   }
 
   render() {
+    const logReverse = log.slice(0).reverse()
     return (
-      <Articles title='News' log={log} type='news' range={5} tags={tags}/>
+      <Articles title='News' log={logReverse} type='news' range={5} tags={tags}/>
     );
   }
 }
