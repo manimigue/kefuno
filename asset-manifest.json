@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kefuno/static/css/main.efc037d6.chunk.css",
-    "main.js": "/kefuno/static/js/main.1061df55.chunk.js",
-    "main.js.map": "/kefuno/static/js/main.1061df55.chunk.js.map",
+    "main.js": "/kefuno/static/js/main.6de111e9.chunk.js",
+    "main.js.map": "/kefuno/static/js/main.6de111e9.chunk.js.map",
     "reactPlayerDailyMotion.js": "/kefuno/static/js/reactPlayerDailyMotion.68935702.chunk.js",
     "reactPlayerDailyMotion.js.map": "/kefuno/static/js/reactPlayerDailyMotion.68935702.chunk.js.map",
     "reactPlayerFacebook.js": "/kefuno/static/js/reactPlayerFacebook.327e9f07.chunk.js",
@@ -32,7 +32,7 @@
     "static/js/14.573eefb3.chunk.js": "/kefuno/static/js/14.573eefb3.chunk.js",
     "static/js/14.573eefb3.chunk.js.map": "/kefuno/static/js/14.573eefb3.chunk.js.map",
     "index.html": "/kefuno/index.html",
-    "precache-manifest.a1899f4792d3ed97bc7f2f9b701ca1f4.js": "/kefuno/precache-manifest.a1899f4792d3ed97bc7f2f9b701ca1f4.js",
+    "precache-manifest.bf9f250e597ddb872a9c866ad99e1c41.js": "/kefuno/precache-manifest.bf9f250e597ddb872a9c866ad99e1c41.js",
     "service-worker.js": "/kefuno/service-worker.js",
     "static/css/main.efc037d6.chunk.css.map": "/kefuno/static/css/main.efc037d6.chunk.css.map",
     "static/js/14.573eefb3.chunk.js.LICENSE.txt": "/kefuno/static/js/14.573eefb3.chunk.js.LICENSE.txt",
@@ -68,6 +68,6 @@
     "static/js/runtime-main.adcc7904.js",
     "static/js/14.573eefb3.chunk.js",
     "static/css/main.efc037d6.chunk.css",
-    "static/js/main.1061df55.chunk.js"
+    "static/js/main.6de111e9.chunk.js"
   ]
 }
