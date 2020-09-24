@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Route } from 'react-router-dom'
-
+import Footer from './containers/Footer'
+import NewsRoutes from './news'
 import Home from './containers/Home'
 import Header from './containers/Header';
-import News from './containers/News'
-import Contact from './containers/Contact';
-import Tickets from './containers/Ticket';
-import Footer from './containers/Footer';
-import NewsRoutes from './news';
+
+const News =  lazy(() => import( './containers/News'))
+const Contact =  lazy(() => import( './containers/Contact'));
+const Tickets =  lazy(() => import( './containers/Ticket'));
+
+const renderLoader = () => <p>Loading</p>;
 
 function App() {
   return (
@@ -15,9 +17,11 @@ function App() {
       <Header />
       <div className='main'>
         <Route exact path='/' component={Home} />
-        <Route exact path='/news' component={News} />
-        <Route exact path='/ticket' component={Tickets} />
-        <Route exact path='/contact' component={Contact} />
+        <Suspense fallback={renderLoader()}>
+          <Route exact path='/news' component={News} />
+          <Route exact path='/ticket' component={Tickets} />
+          <Route exact path='/contact' component={Contact} />
+        </Suspense>
         <NewsRoutes />
       </div>
       <Footer />

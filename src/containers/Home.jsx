@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, lazy, Suspense } from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import ReactPlayer from 'react-player/lazy'
+import Skeleton from 'react-loading';
 
 import {selectPlayed, savePlayed} from '../store/video'
 
 import News from './News'
-import Twitter from '../component/Twitter'
 
-import Pic from '../img/homepic.png'
+import Pic from '../img/homepic.webp'
 import Video from  '../video/video.mov'
 import '../sass/main/home.scss'
+
+const Twitter = lazy(() => import('../component/Twitter'));
+
 
 const Home = () => {
   const played = useSelector(selectPlayed);
@@ -39,6 +42,7 @@ const Home = () => {
           onReady={() => setPlayable(true)} 
           width="100%" height="auto"
           onEnded={() => dispatch(savePlayed())}
+          fallback={() => null}
         />
         {/* <button onClick={() => dispatch(savePlayed())} className={playable ? "skip" : "skip loading"}>
           <span>スキップ→</span>
@@ -46,7 +50,11 @@ const Home = () => {
       </div>}
       <img className="topImage" src={Pic} alt="kefuno. Home" />
       <News />
-      <Twitter account='twitter'/>
+      <div className="twitterContainer">
+        <Suspense fallback={() => <Skeleton width="100%" height="100%"/>} >
+          <Twitter account='twitter'/>
+        </Suspense>
+      </div>
     </div>
   )
 }

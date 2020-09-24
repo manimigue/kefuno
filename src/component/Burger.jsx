@@ -23,7 +23,7 @@ const StyledBurger = styled.button`
 
 const Burger = ({ open, setOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)} className="burger">
+    <StyledBurger aria-label={"Menu button"} open={open} onClick={() => setOpen(!open)} className="burger">
       <div /><div /><div />
     </StyledBurger>
   )

@@ -1,13 +1,13 @@
 @use '../main/main';
 
-.twitter {
+.twitterContainer {
   @include main.setMargin;
 
   height: 520px;
   max-width: 659px;
   margin-top: 20px;
 
-  div {
+  .twutter div {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
