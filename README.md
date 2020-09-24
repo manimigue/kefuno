@@ -128,7 +128,7 @@ kefunoAppが開けたら下記のような画面が表示されます。各項�
 
 Typoraは基本的にはメモ帳やテキストエディタと同じような使い方ができます。違うのはMarkdownやHTMLで書けることと，色々なショートカットがあることです。Markdownについては別途説明しますが，Macでのショートカットについては以下の図を参考に見出しやスタイリングを試してみてください。
 
-![typoraex](https://tva1.sinaimg.cn/large/007S8ZIlgy1gj09dnumcoj30vf0u0h0p.jpg)
+![typoraex](src/news/markdown/assets/typoraex.png)
 
 上のメニューバーの「段落」や「フォーマット」メニューからも選択できるので，ショートカットを覚えるのは必須ではないです。よく使うものとしては
 
