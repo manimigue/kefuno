@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Fade from 'react-reveal/Fade';
 import ReactGA from 'react-ga';
 import {Helmet} from 'react-helmet';
@@ -64,40 +62,44 @@ class Tickets extends Component {
     const ticketSelect = (type) => (
       <div className={"ticket-type type" + type.toString()} key={type}>
         <h5>券種{ticketTypeNum < 2 ? null : type.toString()}</h5>
-        <Form.Control 
+        <select 
         name={'券種' + type.toString()} 
         as="select" 
         disabled={type > ticketTypeNum}>
           {
             ticketTypes.map((t) => (<option key={t} value={t}>{t}</option>))
           }
-        </Form.Control>
+        </select>
         <h5>枚数</h5>
-        <Form.Control 
+        <select className="formControl"
         name={'枚数' + type.toString()} 
         as="select" 
         disabled={type > ticketTypeNum}>
           {
             Array.from(Array(ticketMax), (v, num) => (<option key={type * ticketMax + num} value={num + 1}>{num + 1}</option>))
           }
-        </Form.Control>
+        </select>
       </div>
     )
     const ticketSelections = () => (
       <React.Fragment>
         { ticketSelect(1) } 
         { ticketTypes.length > 1 ? 
-          Array.from(Array(ticketTypes.length -1 ), (v,num) => (
-            <Fade key={num} collapse when={num+2 <= ticketTypeNum}>{ticketSelect(num+2)}</Fade>
-          ))
-        : null
-        }
-        { (ticketTypes.length > 1 && ticketTypeNum < ticketTypes.length) ? 
-          <Button onClick={this.addTicket} className='add-ticketTypes'> + </Button>
-        : null
-        }
-        { (ticketTypes.length > 1 && ticketTypeNum > 1) ? 
-          <Button onClick={this.reduceTicket} className='reduce-ticketTypes'> - </Button>
+          <React.Fragment>
+            {Array.from(Array(ticketTypes.length -1 ), (v,num) => (
+              <Fade key={num} collapse when={num+2 <= ticketTypeNum}>
+                {ticketSelect(num+2)}
+              </Fade>
+            ))}
+            <div className="manageTicketTypes">
+              <Fade duration={500} when={(ticketTypes.length > 1 && ticketTypeNum < ticketTypes.length)} >
+                <button type="button" onClick={this.addTicket} className='add'> + </button>
+              </Fade>
+              <Fade duration={500} when={(ticketTypes.length > 1 && ticketTypeNum > 1)}>
+                <button type="button" onClick={this.reduceTicket} className='reduce'> - </button>
+              </Fade>
+            </div>
+          </ React.Fragment>
         : null
         }
       </React.Fragment>

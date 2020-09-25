@@ -5,6 +5,8 @@
 
 $dark: color.$dark;
 $bright: color.$bright;
+$link-color: color.$link;
+$link-hover: color.$link-hover;
 
 .ticket {
   @include main.setMargin;
@@ -19,9 +21,43 @@ $bright: color.$bright;
       margin-top: 20px;
     }
     
-    @include form.input-textareStyle($dark);
+    @include form.formStyle($dark);
 
     @include form.submitStyle($bright, $dark);
+
+    .manageTicketTypes{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      .add, .reduce {
+        width: 10rem;
+        max-width: 40%;
+        border: none;
+        margin-top: 1rem;
+        background: transparent;
+        color: $link-color;
+        font-size: 2rem;
+        border: $link-color 1px solid;
+        border-radius: 3px;
+        transition: opacity .3s ease;
+        &:hover, &:focus {
+          color: $link-hover;
+          border-color: $link-hover;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          outline: none;
+        }
+        transition: .3s ease;
+      }
+
+      .add {
+        margin-right: auto;
+      }
+
+      .reduce {
+        margin-left: auto;
+      }
+
+    }
 
     @include window.minmiddle{
       input,textarea,select {

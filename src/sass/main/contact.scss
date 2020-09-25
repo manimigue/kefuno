@@ -9,7 +9,7 @@ $bright: color.$bright;
 .contact-form {
   @include main.setMargin;
 
-  @include form.input-textareStyle($dark);
+  @include form.formStyle($dark);
 
   @include form.submitStyle($bright, $dark);
   

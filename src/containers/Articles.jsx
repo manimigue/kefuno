@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 import ReactGA from 'react-ga';
 import Fade from 'react-reveal/Fade';
 import { Search, Cancel } from '@material-ui/icons';
-import Button from 'react-bootstrap/Button';
 
 import { saveStart, saveTag, saveHome } from '../store/news'
 import Link from '../component/Link';
+import TagButton from '../component/TagButton';
 
 class Articles extends Component {
   static defaultProps = {
@@ -199,14 +199,13 @@ class Articles extends Component {
       const articleTags = tags !== false &&  listTag ?
         article.tag.map(tag => {
           const tagSelector = (
-            <Button
-              className='tagSelector'
-              variant={tag === selectedTag ? "secondary" : "outline-secondary"}
+            <TagButton
+              className={tag === selectedTag ? "selected" : ""}
               onClick={()=>this.selectTag(tag, range, selectedTag,false,article.url)}
               key={article.url + tag}
             >
               #{tag}
-            </Button>
+            </TagButton>
           )
           return tagSelector
         })
@@ -217,7 +216,7 @@ class Articles extends Component {
       return (
         <li key={article.url} className='articleList' style={{cursor:"pointer"}}>
             <Link
-            key={article.url+'button'}
+            key={article.url+'TagButton'}
             to={this.articleURL(article.url)}
           className='articleListTitle'
             >
@@ -237,69 +236,63 @@ class Articles extends Component {
         </li>
       );
     });
-    const button = nextBut || prevBut ?
+    const ArticleManage = nextBut || prevBut ?
     (
-      <div className='articleButton' height='50px'>
-        <Button
-          className='articlePrev'
-          variant="dark"
+      <div className='articleManage' height='50px'>
+        <TagButton
+          className='articlePrev selected'
           style={{display : prevBut ? 'block' : 'none'}}
           onClick={()=>this.previous(start,range)}
         >
           &#8249; 戻る
-        </Button>
-        <Button
+        </TagButton>
+        <TagButton
           className="articleFirst"
-          variant="secondary"
           style={{display : start!==0 ? 'inline-block' : 'none'}}
           onClick={()=>this.first(range)}
         >
           &laquo; 最新へ
-        </Button>
-        <Button
-          className='articleNext'
-          variant="dark"
+        </TagButton>
+        <TagButton
+          className='articleNext selected'
           style={{display : nextBut ? 'block' : 'none'}}
           onClick={()=>this.next(end,range)}
         >
           次へ &#8250;
-        </Button>
+        </TagButton>
       </div>
     )
     : null;
 
     const tagSearch = tags !== false ?
     (
-      <Button
-        className='tagSearch'
+      <TagButton
+        className='link'
         onClick={() => this.switchTagDisp(tagDisp)}
         style={{textAlign:"center"}}
-        variant="link"
       >
         Search<Search />
-      </Button>
+      </TagButton>
     ) :
     null;
 
     const tagSelectors = tags !== false ? (
       tags.map(tag => {
-        return (<Button
-          className='tagSelector tagSelector-main'
-          variant={tag === selectedTag ? "secondary" : "outline-secondary"}
+        return (<TagButton
+          className={tag === selectedTag ? "selected selector" : "selector"}
           onClick={()=>this.selectTag(tag, range, selectedTag)}
           key={tag}
         >
           #{tag}
-        </Button>)
+        </TagButton>)
       }).concat(
-        [<Button
-          className='tagSelector tagSelector-main'
-          variant="secondary"
+        [<TagButton
+          className='selector cancel'
           onClick={()=>this.initializeTag(range)}
           key="null"
         >
           <Cancel />
-        </Button>]
+        </TagButton>]
       )
     ) : null;
 
@@ -308,7 +301,7 @@ class Articles extends Component {
         <h2 className='title'>{title}{tagSearch}</h2>
         <Fade right collapse when={tags !== false && tagDisp !== false} children={<div>{tagSelectors}</div>} duration={2000}/>
         <ul className='articles' ref={this.listRef}>{lists}</ul>
-        {button}
+        {ArticleManage}
       </div>
     );
   }

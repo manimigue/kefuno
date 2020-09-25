@@ -1,12 +1,10 @@
 @use './main';
+@use '../mixin/color';
+
+
 
 .articleSec{
   @include main.setMargin;
-
-  .articleFirst{
-    float: left;
-    margin-left: 10px;
-  }
   
   ul.articles {
     list-style: none;
@@ -84,7 +82,7 @@
         }
       }
   
-      button.tagSelector {
+      button.tagButton {
         font-size: 9px;
         padding-top: 4px;
         padding-left: 7px;
@@ -104,28 +102,35 @@
     }
   }
 
-  .tagSelector,.tagSearch {
-    &:focus,&:hover, &:active {
-      outline: 0;
+  .tagButton.selector{
+    height: 39px;
+    margin-right: 6px;
+
+    &.cancel{
+      color: white;
+      background-color: rgb(83, 83, 83);
     }
   }
 
-  .tagSelector-main{
-    height: 39px;
-    margin-right: 6px;
-  }
-
-  .tagSearch {
+  .tagButton.link {
     padding: 6px 8px;
-    border: 0;
+    border: none;
     float: right;
     text-decoration: none;
   }
 
-  .articleButton {
+  .articleManage {
     width: 100%;
     display: block;
-    height: 50px;
+    height: 40px;
+
+    .articleFirst , .articlePrev, .articleNext{
+      height: 100%;
+      font-size: 1.1rem;
+      margin: 3px;
+      width: 5.5rem;
+    }
+  
 
     .articleFirst {
       float: left;
