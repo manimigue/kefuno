@@ -10,6 +10,7 @@ import store from './store';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+import watchForHover from './watchForHover'
 import * as serviceWorker from './serviceWorker';
 
 
@@ -22,6 +23,8 @@ history.listen(({ pathname }) => {
   ReactGA.set({ page: pathname });
   ReactGA.pageview(pathname);
 });
+
+watchForHover()
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,7 +1,6 @@
 @use './main';
 @use '../mixin/color';
-
-
+@use '../mixin/hover';
 
 .articleSec{
   @include main.setMargin;
@@ -33,7 +32,7 @@
       border-bottom: 1px solid rgba(42, 44, 50, 0.54);
       margin-top: 15px;padding-left: 10px;
 
-      &:hover {
+      @include hover.hover{
         cursor: pointer !important;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       }

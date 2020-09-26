@@ -1,5 +1,6 @@
 @use '../mixin/window';
 @use './main';
+@use '../mixin/hover';
 
 .articleContent {
   @include main.setMargin;
@@ -16,7 +17,7 @@
       border: none;
       border-bottom: 1px solid #5f9dda !important;
       outline: 0;
-      &:hover {
+      @include hover.hover{
         cursor: pointer;
         outline: 0;
       }

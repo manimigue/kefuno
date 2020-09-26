@@ -1,4 +1,5 @@
 @use '../mixin/color';
+@use '../mixin/hover';
 
 $link: color.$link;
 
@@ -9,13 +10,14 @@ $link: color.$link;
   color: gray;
   transition: .3s ease;
   
-  &:hover{
+  @include hover.hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     outline: none;
     cursor: pointer;
   }
   &:focus {
     outline: none;
+    box-shadow: none;
   }
 
   &.link {

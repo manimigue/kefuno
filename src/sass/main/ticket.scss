@@ -1,6 +1,7 @@
 @use './main';
 @use '../mixin/window';
 @use '../mixin/color';
+@use '../mixin/hover';
 @use './form';
 
 $dark: color.$dark;
@@ -40,7 +41,13 @@ $link-hover: color.$link-hover;
         border: $link-color 1px solid;
         border-radius: 3px;
         transition: opacity .3s ease;
-        &:hover, &:focus {
+        @include hover.hover{
+          color: $link-hover;
+          border-color: $link-hover;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          outline: none;
+        }
+        &:focus {
           color: $link-hover;
           border-color: $link-hover;
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
