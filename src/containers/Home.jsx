@@ -8,6 +8,7 @@ import {selectPlayed, savePlayed} from '../store/video'
 import News from './News'
 
 import Pic from '../img/homepic.webp'
+import Pic_png from '../img/homepic.png'
 import Video from  '../video/video.mov'
 import '../sass/main/home.scss'
 
@@ -48,7 +49,10 @@ const Home = () => {
           <span>スキップ→</span>
         </button> */}
       </div>}
-      <img className="topImage" src={Pic} alt="kefuno. Home" />
+      <picture alt="kefuno. Home">
+        <source srcSet={Pic} type="image/webp" />
+        <img className="topImage" src={Pic_png} alt="kefuno. Home"/>
+      </picture>
       <News />
       <div className="twitterContainer">
         <Suspense fallback={() => <Skeleton width="100%" height="100%"/>} >
