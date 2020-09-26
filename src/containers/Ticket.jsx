@@ -92,11 +92,15 @@ class Tickets extends Component {
               </Fade>
             ))}
             <div className="manageTicketTypes">
-              <Fade duration={500} when={(ticketTypes.length > 1 && ticketTypeNum < ticketTypes.length)} >
-                <button type="button" onClick={this.addTicket} className='add'> + </button>
+              <Fade duration={500} when={ticketTypeNum < ticketTypes.length} >
+                <div className='add'>
+                  <button type="button" onClick={this.addTicket}> + </button>
+                </div>
               </Fade>
-              <Fade duration={500} when={(ticketTypes.length > 1 && ticketTypeNum > 1)}>
-                <button type="button" onClick={this.reduceTicket} className='reduce'> - </button>
+              <Fade duration={500} when={ticketTypeNum > 1}>
+                <div className='reduce'>
+                  <button type="button" onClick={this.reduceTicket}> - </button>
+                </div>
               </Fade>
             </div>
           </ React.Fragment>

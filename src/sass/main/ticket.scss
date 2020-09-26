@@ -12,48 +12,56 @@ $link-hover: color.$link-hover;
 .ticket {
   @include main.setMargin;
 
-  
-  .ticket-form{
+
+  .ticket-form {
     button {
       margin: 3px;
       margin-top: 5px;
     }
-    h5{
+
+    h5 {
       margin-top: 20px;
     }
-    
+
     @include form.formStyle($dark);
 
     @include form.submitStyle($bright, $dark);
 
-    .manageTicketTypes{
+    .manageTicketTypes {
       display: flex;
       width: 100%;
       flex-direction: row;
-      .add, .reduce {
+
+      .add,
+      .reduce {
         width: 10rem;
         max-width: 40%;
-        border: none;
         margin-top: 1rem;
-        background: transparent;
-        color: $link-color;
-        font-size: 2rem;
-        border: $link-color 1px solid;
-        border-radius: 3px;
-        transition: opacity .3s ease;
-        @include hover.hover{
-          color: $link-hover;
-          border-color: $link-hover;
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-          outline: none;
+
+        button {
+          width: 100%;
+          color: $link-color;
+          border: none;
+          background: transparent;
+          font-size: 2rem;
+          border: $link-color 1px solid;
+          border-radius: 3px;
+          transition: .3s ease;
+
+          @include hover.hover {
+            color: $link-hover;
+            border-color: $link-hover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            outline: none;
+          }
+
+          &:focus {
+            color: $link-hover;
+            border-color: $link-hover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            outline: none;
+          }
         }
-        &:focus {
-          color: $link-hover;
-          border-color: $link-hover;
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-          outline: none;
-        }
-        transition: .3s ease;
       }
 
       .add {
@@ -66,28 +74,37 @@ $link-hover: color.$link-hover;
 
     }
 
-    @include window.minmiddle{
-      input,textarea,select {
+    @include window.minmiddle {
+
+      input,
+      textarea,
+      select {
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
     }
-  
-    @include window.middlemax{
-      input,textarea{
-        width : 60%;
+
+    @include window.middlemax {
+
+      input,
+      textarea {
+        width: 60%;
       }
-      select{
+
+      select {
         width: 70%;
       }
     }
-  
-    @include window.minmax{
-      input,textarea{
-        width : 50%;
+
+    @include window.minmax {
+
+      input,
+      textarea {
+        width: 50%;
       }
-      select{
+
+      select {
         width: 60%;
       }
     }
