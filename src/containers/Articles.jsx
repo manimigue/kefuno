@@ -299,7 +299,11 @@ class Articles extends Component {
     return (
       <div className={"articleSec articleSec-"+type}>
         <h2 className='title'>{title}{tagSearch}</h2>
-        <Fade right collapse when={tags !== false && tagDisp !== false} children={<div>{tagSelectors}</div>} duration={2000}/>
+        <Fade right collapse when={tags !== false && tagDisp !== false} duration={2000}>
+          <div className="tagSelectors">
+            {tagSelectors}
+          </div>
+        </Fade>
         <ul className='articles' ref={this.listRef}>{lists}</ul>
         {ArticleManage}
       </div>

@@ -101,13 +101,35 @@
     }
   }
 
-  .tagButton.selector{
-    height: 39px;
-    margin-right: 6px;
+  .tagSelectors{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    .tagButton.selector{
+      height: 39px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      
 
-    &.cancel{
-      color: white;
-      background-color: rgb(83, 83, 83);
+      &.cancel{
+        color: white;
+        background-color: rgb(83, 83, 83);
+        position: relative;
+        width: 3rem;
+        svg{
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          left: 0;
+          right: 0;
+          margin: auto;
+          text-align: center;
+        }
+      }
     }
   }
 
