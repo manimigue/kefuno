@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74e7f938fdcda19cd65d408a939a4833",
+    "revision": "0799c94de4988140e33d4168817bf8bb",
     "url": "/kefuno/index.html"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kefuno/static/css/18.2604822b.chunk.css"
   },
   {
-    "revision": "e36eff6993fb1604cdcf",
-    "url": "/kefuno/static/css/19.d1388bef.chunk.css"
+    "revision": "d2412b0647b2da516295",
+    "url": "/kefuno/static/css/19.b794236d.chunk.css"
   },
   {
-    "revision": "de7c28b5758178558ade",
+    "revision": "80a0672511c514a4d83b",
     "url": "/kefuno/static/css/main.7d071fc6.chunk.css"
   },
   {
@@ -48,12 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kefuno/static/js/18.18b4a89a.chunk.js"
   },
   {
-    "revision": "e36eff6993fb1604cdcf",
-    "url": "/kefuno/static/js/19.8197214c.chunk.js"
+    "revision": "d2412b0647b2da516295",
+    "url": "/kefuno/static/js/19.831478d7.chunk.js"
   },
   {
-    "revision": "de7c28b5758178558ade",
-    "url": "/kefuno/static/js/main.1873a85c.chunk.js"
+    "revision": "80a0672511c514a4d83b",
+    "url": "/kefuno/static/js/main.35df7a1c.chunk.js"
   },
   {
     "revision": "02243f088cc93dff6aeb",
@@ -104,8 +104,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kefuno/static/js/reactPlayerYouTube.84ae5cdd.chunk.js"
   },
   {
-    "revision": "edd90f727fac875853f1",
-    "url": "/kefuno/static/js/runtime-main.584e8b3d.js"
+    "revision": "52d6773f22336052e577",
+    "url": "/kefuno/static/js/runtime-main.4b6fb7b1.js"
   },
   {
     "revision": "e089c34db21e79f4cf09a0dd27f363ea",
