@@ -1,73 +1,118 @@
-[{
-  "author": "三石ミゲール",
-  "title": "デモ1",
-  "file": "demo1.md",
-  "date": "2020-09-11",
-  "id": 1,
-  "tag": ["お知らせ"],
-  "url": "demo1",
-  "copied": []
-}, {
-  "author": "miguel",
-  "title": "デモ2",
-  "file": "news2_デモ2",
-  "date": "2020-09-19",
-  "id": 2,
-  "tag": ["お知らせ", "コラム"],
-  "url": "news2_20200919",
-  "copied": ["homepic.png"]
-}, {
-  "author": "miguel",
-  "title": "デモ3",
-  "file": "news3_デモ3",
-  "date": "2020-09-19",
-  "id": 3,
-  "tag": ["チケット"],
-  "url": "news3_20200919",
-  "copied": ["logo512.png"]
-}, {
-  "author": "miguel",
-  "title": "デモ4",
-  "file": "news3_デモ4",
-  "date": "2020-09-19",
-  "id": 4,
-  "tag": ["お知らせ", "チケット"],
-  "url": "news4_20200918demo4",
-  "copied": []
-}, {
-  "author": "miguel",
-  "title": "写真テスト",
-  "file": "news5_写真テスト",
-  "date": "2020-09-20",
-  "id": 5,
-  "tag": ["お知らせ", "チケット"],
-  "url": "news5_20200920",
-  "copied": ["スクリーンショット 2020-05-06 19.34.28.png", "logo.png", "test.png", "test2.png"]
-}, {
-  "author": "miguel",
-  "title": "Typoraの使い方",
-  "file": "news6_Typoraの使い方",
-  "date": "2020-09-21",
-  "id": 6,
-  "tag": ["コラム"],
-  "url": "news6_20200921",
-  "copied": []
-}, {
-  "author": "miguel",
-  "title": "kefunoWebpage概要",
-  "file": "news6_kefunoWebpage概要",
-  "date": "2020-09-22",
-  "id": 7,
-  "tag": [],
-  "url": "news7_20200921",
-  "copied": ["kefuno.drawio.png", "typora_download.png", "typora_setting1.png", "assets2.png", "imgset4.png", "imgset3.png", "kefunoApp.png", "typoraex.png", "style.png", "upload1.png", "upload2.png"]
-}, {
-  "author": "kosei maeda",
-  "title": "test be koseimaeda",
-  "tag": [],
-  "date": "2020-09-26",
-  "id": 8,
-  "file": "news8_test by koseimaeda",
-  "url": "news8_20200926",
-  "copied": []
-}]
+[
+  {
+    "author": "三石ミゲール",
+    "title": "デモ1",
+    "file": "demo1.md",
+    "date": "2020-09-11",
+    "id": 1,
+    "tag": [
+      "お知らせ"
+    ],
+    "url": "demo1",
+    "copied": []
+  },
+  {
+    "author": "miguel",
+    "title": "デモ2",
+    "file": "news2_デモ2",
+    "date": "2020-09-19",
+    "id": 2,
+    "tag": [
+      "お知らせ",
+      "コラム"
+    ],
+    "url": "news2_20200919",
+    "copied": [
+      "homepic.png"
+    ]
+  },
+  {
+    "author": "miguel",
+    "title": "デモ3",
+    "file": "news3_デモ3",
+    "date": "2020-09-19",
+    "id": 3,
+    "tag": [
+      "チケット"
+    ],
+    "url": "news3_20200919",
+    "copied": [
+      "logo512.png"
+    ]
+  },
+  {
+    "author": "miguel",
+    "title": "デモ4",
+    "file": "news3_デモ4",
+    "date": "2020-09-19",
+    "id": 4,
+    "tag": [
+      "お知らせ",
+      "チケット"
+    ],
+    "url": "news4_20200918demo4",
+    "copied": []
+  },
+  {
+    "author": "miguel",
+    "title": "写真テスト",
+    "file": "news5_写真テスト",
+    "date": "2020-09-20",
+    "id": 5,
+    "tag": [
+      "お知らせ",
+      "チケット"
+    ],
+    "url": "news5_20200920",
+    "copied": [
+      "スクリーンショット 2020-05-06 19.34.28.png",
+      "logo.png",
+      "test.png",
+      "test2.png"
+    ]
+  },
+  {
+    "author": "miguel",
+    "title": "Typoraの使い方",
+    "file": "news6_Typoraの使い方",
+    "date": "2020-09-21",
+    "id": 6,
+    "tag": [
+      "コラム"
+    ],
+    "url": "news6_20200921",
+    "copied": []
+  },
+  {
+    "author": "miguel",
+    "title": "kefunoWebpage概要",
+    "file": "news6_kefunoWebpage概要",
+    "date": "2020-09-22",
+    "id": 7,
+    "tag": [],
+    "url": "news7_20200921",
+    "copied": [
+      "kefuno.drawio.png",
+      "typora_download.png",
+      "typora_setting1.png",
+      "assets2.png",
+      "imgset4.png",
+      "imgset3.png",
+      "kefunoApp.png",
+      "typoraex.png",
+      "style.png",
+      "upload1.png",
+      "upload2.png"
+    ]
+  },
+  {
+    "author": "kosei maeda",
+    "title": "test be koseimaeda",
+    "tag": [],
+    "date": "2020-09-26",
+    "id": 8,
+    "file": "news8_test by koseimaeda",
+    "url": "news8_20200926",
+    "copied": []
+  }
+]
