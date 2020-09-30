@@ -173,7 +173,7 @@ if __name__ == "__main__":
     f.write(components)
   
   with open(logs_path,'w') as f:
-    json.dump(logs,f)
+    json.dump(logs,f,ensure_ascii=False)
 
   for folder in folders:
     file_path = os.path.join(upload_path, folder)
