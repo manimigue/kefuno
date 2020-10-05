@@ -142,9 +142,17 @@ def upload_files(folder):
 if __name__ == "__main__":
   python_path = os.path.dirname(os.path.abspath(__file__))
   # 1: 投稿ファイルの相対パス 2: 更新先となるsrc内のarticlesの相対パス
-  upload_path = os.path.abspath(sys.argv[1])
-  news_path = os.path.abspath(sys.argv[2])
-
+  # デフォルトで$1=news,$2=src/news
+  try:
+    upload_path = os.path.abspath(sys.argv[1])
+  except IndexError:
+    upload_path = os.path.abspath("news")
+   
+  try:
+    news_path = os.path.abspath(sys.argv[2])
+  except IndexError:
+    news_path = os.path.abspath("src/news")
+  
   print("更新先 : ", news_path)
   components_path, logs_path, articles_path, markdowns_path = article_files()
   with open(logs_path,'r') as f:
@@ -157,6 +165,11 @@ if __name__ == "__main__":
     os.chdir(upload_path)
   
   folders = [folder for folder in os.listdir() if os.path.isdir(folder)]
+
+  if len(folders) == 0:
+    print("アップロードされた記事: ", str(len(folders)), "件")
+    exit()
+  
   for folder in folders:
     print("更新フォルダ : " , folder)
     md_path, config_path, assets_path = upload_files(folder)
