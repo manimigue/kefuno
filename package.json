@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
     "enzyme": "^3.11.0",
     "node-sass": "npm:sass@^1.26.10",
     "react": "^16.13.1",
@@ -27,12 +28,12 @@
     "react-twitter-embed": "^3.0.3",
     "react-use-dimensions": "^1.2.1",
     "styled-components": "^5.2.0",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "url-join": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "netlify": "python3 .python/main.py && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "react-scripts build && gh-pages -d build"

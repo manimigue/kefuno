@@ -146,6 +146,11 @@ class Articles extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+    if (prevProps.log !== this.props.log ) {
+      const logPart = this.props.log;
+      this.setState({ logPart })
+      this.first(this.props.range, logPart)
+    }
     if (this.props.tags !== false){
       const listWidth = this.listRef.current.offsetWidth
       if (this.state.listTag){
