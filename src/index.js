@@ -30,7 +30,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router history={history} basename='/kefuno'>
-        <App strapiRoot="http://kefuno-strapi.herokuapp.com/"/>
+        <App strapiRoot="https://kefuno-strapi.gq/"/>
       </Router>
     </Provider>
   </React.StrictMode>,
