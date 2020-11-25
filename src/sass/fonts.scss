@@ -25,4 +25,6 @@
   }
 }
 
-@include font-face('Baskerville Normal', './fonts/baskvl.woff',normal, normal , woff)
+@include font-face('Baskerville Normal', './fonts/baskvl.woff',normal, normal , woff);
+@include font-face('Sorts Mill Goudy', './fonts/SortsMillGoudy-Regular.ttf',normal, normal , ttf);
+@include font-face('Noto Sans JP', './fonts/NotoSansJP-Regular.otf',normal, normal , otf);
