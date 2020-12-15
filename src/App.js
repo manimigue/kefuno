@@ -4,7 +4,9 @@ import Footer from './containers/Footer'
 import NewsRoutes from './news'
 import Home from './containers/Home'
 import Header from './containers/Header';
+import Loader from './component/Loader'
 // import { delHome, selectHome } from './store/news'
+
 
 const News =  lazy(() => import( './containers/News'))
 const Contact =  lazy(() => import( './containers/Contact'));
@@ -14,17 +16,13 @@ const About = lazy(() => import('./containers/About'))
 const Member = lazy(() => import('./containers/Member'))
 // const Article = lazy(() => import('./containers/Article'))
 
-const renderLoader = () => <p>Loading</p>;
-
-
-
 function App({ strapiRoot }) {
   return (
     <React.Fragment>
       <Header />
       <div className='main'>
         <Route exact path='/' component={Home} />
-        <Suspense fallback={renderLoader()}>
+        <Suspense fallback={Loader()}>
           {/* <Route exact path='/news' component={() => <News root={strapiRoot} />} /> */}
           <Route exact path='/news' component={News} />
           <Route exact path='/about' component={About} />
@@ -32,6 +30,7 @@ function App({ strapiRoot }) {
           <Route exact path='/member' component={Member} />
           <Route exact path='/ticket' component={Tickets} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/load' component={Loader} />
           {/* <Route path='/news/:url' component={() => <Article type="news" root={strapiRoot} delHome={delHome} selectHome={selectHome}/>} /> */}
         </Suspense>
         <NewsRoutes />

@@ -132,7 +132,7 @@ class Tickets extends Component {
         <Helmet>
           <title>kefuno. チケット情報</title>
         </Helmet>
-        <div className="title"><h2 >Ticket</h2></div>
+        <div className="title"><h1 >Ticket</h1></div>
         <Info />
         <div className='ticket-buy' >
           <h4>チケット予約</h4>

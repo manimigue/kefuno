@@ -303,7 +303,7 @@ class Articles extends Component {
 
     return (
       <div className={"articleSec articleSec-"+type}>
-        <h2 className='title'>{title}{tagSearch}</h2>
+        <h1 className='title'>{title}{tagSearch}</h1>
         <Fade right collapse when={tags !== false && tagDisp !== false} duration={2000}>
           <div className="tagSelectors">
             {tagSelectors}

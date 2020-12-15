@@ -7,7 +7,8 @@ import '../sass/main/work.scss'
 export default () => {
   return (
     <div className="work">
-      <h1>月に惑ふ</h1>
+      <h1 className="title">Work</h1>
+      <h2>月に惑ふ</h2>
       <picture alt="kefuno. Home" className="topImage">
         <source srcSet={Image_webp} type="image/webp" />
         <img src={Image_jpg} alt="kefuno. Home"/>
