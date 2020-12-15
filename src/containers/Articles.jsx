@@ -276,7 +276,7 @@ class Articles extends Component {
         onClick={() => this.switchTagDisp(tagDisp)}
         style={{textAlign:"center"}}
       >
-        Search<Search />
+        <Search />
       </TagButton>
     ) :
     null;
