@@ -2,7 +2,7 @@ const linkMaker = (url, text) => ({url, text})
 
 const links = [
   linkMaker('/news', 'News'),
-  linkMaker('about', 'About'),
+  linkMaker('/about', 'About'),
   linkMaker('/work', 'Work'),
   linkMaker('/member', 'Member'),
   linkMaker('/ticket', 'Ticket'),

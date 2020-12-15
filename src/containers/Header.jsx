@@ -4,6 +4,8 @@ import { useLocation } from 'react-router-dom'
 import Menu from './Menu'
 import Link from '../component/Link'
 
+import Logo from '../img/logo.png'
+
 
 import '../sass/header/header.scss'
 
@@ -16,7 +18,7 @@ const Header = () => {
     <header className={home ? "":  "nothome"}>
       <div className="logo" >
         <Link to="/">
-          <h1>kefuno.</h1>
+          <img src={Logo} alt="kefuno. logo"/>
         </Link>
       </div>
       <Menu />

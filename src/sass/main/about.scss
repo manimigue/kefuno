@@ -1,0 +1,5 @@
+@use './main';
+
+.about {
+  @include main.setMargin;
+}

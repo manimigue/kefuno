@@ -4,14 +4,7 @@ $color: color.$bright;
 $background: color.$dark;
 
 .home {
-  .topImage {
-    width: 100%;
-    margin-bottom: 10px;
-  }
   .topVideo {
-    $video-width: 2022;
-    $video-height: 1137;
-    $skip-height: 24px;
 
     position: absolute;
     top: 0;
@@ -29,11 +22,20 @@ $background: color.$dark;
 
     div {
       video {
-        height: 100vw * $video-height / $video-width !important;
         z-index: -1;
       }
       justify-content: flex-start;
     }
+  }
+  .topImage {
+    width: 100%;
+    height: calc( 100vw / 1080 * 1920);
+    margin-bottom: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &.pc .topImage {
+    height: calc( 100vw / 1920 * 1080);
   }
 }
 

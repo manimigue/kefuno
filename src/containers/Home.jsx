@@ -7,9 +7,11 @@ import {selectPlayed, savePlayed} from '../store/video'
 
 import News from './News'
 
-import Pic from '../img/homepic.webp'
-import Pic_png from '../img/homepic.png'
-import Video from  '../video/video.mov'
+import Pic from '../img/kefuno_image01.webp'
+import Pic_jpg from '../img/kefuno_image01.jpg'
+import Video_mobile from  '../video/mobile.mov'
+import Video_pc from  '../video/pc.mov'
+
 import '../sass/main/home.scss'
 
 const Twitter = lazy(() => import('../component/Twitter'));
@@ -21,8 +23,16 @@ const Home = () => {
 
   const [playable,setPlayable] = useState(false)
   const [hide, setHide] = useState(played)
+  const [width, setWidth] = useState(window.innerWidth)
+
+  const mobile = width >= 720 ? false : true
+
+  const Video = mobile ?  Video_mobile : Video_pc 
+  console.log(window.innerWidth);
+  console.log(Video);
 
   useEffect(() => {
+    window.addEventListener("resize", ()=>setWidth(window.innerWidth))
     if (played) {
       setTimeout(() => {
         setHide(true)
@@ -31,7 +41,7 @@ const Home = () => {
   },[played])
 
   return (
-    <div className="home">
+    <div className={ mobile ? "home mobile" : "home pc"}>
       {hide ? null : 
       <div className={played ? "topVideo played" : "topVideo"}>
         <ReactPlayer 
@@ -43,7 +53,7 @@ const Home = () => {
           onReady={() => setPlayable(true)} 
           width="100%" height="auto"
           onEnded={() => dispatch(savePlayed())}
-          fallback={() => null}
+          loop={true}
         />
         {/* <button onClick={() => dispatch(savePlayed())} className={playable ? "skip" : "skip loading"}>
           <span>スキップ→</span>
@@ -51,11 +61,11 @@ const Home = () => {
       </div>}
       <picture alt="kefuno. Home">
         <source srcSet={Pic} type="image/webp" />
-        <img className="topImage" src={Pic_png} alt="kefuno. Home"/>
+        <img className="topImage" src={Pic_jpg} alt="kefuno. Home"/>
       </picture>
       <News />
       <div className="twitterContainer">
-        <Suspense fallback={() => <Skeleton width="100%" height="100%"/>} >
+        <Suspense fallback={<Skeleton width="100%" height="100%"/>} >
           <Twitter account='twitter'/>
         </Suspense>
       </div>

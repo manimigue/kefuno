@@ -26,10 +26,11 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: 3px;
 
     *{
       color: $color;
-      font-size: 2rem;
+      width: 100%;
     }
 
     @include window.minsmall{
