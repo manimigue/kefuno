@@ -38,9 +38,11 @@ class Tickets extends Component {
 
   onWhich = (on,component) => {
     switch (on) {
-      case "on":
+      case "onSale":
         return component;
-      case "commingSoon":
+      case "infoCommingSoon":
+        return ;
+      case "saleCommingSoon":
         return <h5 style={{marginBottom:"30px"}}>Comming soon</h5>;
       case "end":
         return <h5 style={{marginBottom:"30px"}}>販売終了しました。</h5>;
@@ -59,6 +61,7 @@ class Tickets extends Component {
   render() {
     const mail = "orchestra.musicart.ticket@gmail.com";
     const ticketTypeNum = this.state.ticketTypeNum;
+    const on = this.state.on;
     const ticketSelect = (type) => (
       <div className={"ticket-type type" + type.toString()} key={type}>
         <h5>券種{ticketTypeNum < 2 ? null : type.toString()}</h5>
@@ -110,21 +113,24 @@ class Tickets extends Component {
     )
 
     const ticketForm = () => (
-      <React.Fragment>
-        <p>下記のフォームに入力していただき、送信してください。<br/>1 週間以内に確認の連絡を送らせて頂きます。</p>
-        <form method="POST" action={"https://formspree.io/" + mail} >
-          { ticketSelections() }
-          <h5>代表者名</h5>
-          <input type='text' name='代表者名' placeholder="佐藤　太郎" />
-          <h5>メールアドレス</h5>
-          <input type="email" name="返信先メールアドレス" placeholder="you@example.com"/>
-          <h5>電話番号</h5>
-          <input type="tel" name="返信先電話番号" placeholder="09012345678"/>
-          <h5>その他お問い合わせ</h5>
-          <textarea name='お問い合わせ内容'></textarea>
-          <input className='submit' type="submit" value='Send' onClick={() => this.gaSubmit('Tickets reservation')}/>
-        </form>
-      </React.Fragment>
+      <div className='ticket-buy' >
+        <h4>チケット予約</h4>
+        <div className='ticket-form'>
+          <p>下記のフォームに入力していただき、送信してください。<br/>1 週間以内に確認の連絡を送らせて頂きます。</p>
+          <form method="POST" action={"https://formspree.io/" + mail} >
+            { ticketSelections() }
+            <h5>代表者名</h5>
+            <input type='text' name='代表者名' placeholder="佐藤　太郎" />
+            <h5>メールアドレス</h5>
+            <input type="email" name="返信先メールアドレス" placeholder="you@example.com"/>
+            <h5>電話番号</h5>
+            <input type="tel" name="返信先電話番号" placeholder="09012345678"/>
+            <h5>その他お問い合わせ</h5>
+            <textarea name='お問い合わせ内容'></textarea>
+            <input className='submit' type="submit" value='Send' onClick={() => this.gaSubmit('Tickets reservation')}/>
+          </form>
+        </div>
+      </div>
     )
 
     return (
@@ -132,14 +138,9 @@ class Tickets extends Component {
         <Helmet>
           <title>kefuno. チケット情報</title>
         </Helmet>
-        <div className="title"><h1 >Ticket</h1></div>
-        <Info />
-        <div className='ticket-buy' >
-          <h4>チケット予約</h4>
-          <div className='ticket-form'>
-            {this.onWhich(this.state.on,ticketForm())}
-          </div>
-        </div>
+        <div className="title"><h2 >Ticket</h2></div>
+        <Info on={on}/>
+        {this.onWhich(on,ticketForm())}
       </div>
 
     );

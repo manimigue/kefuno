@@ -276,7 +276,7 @@ class Articles extends Component {
         onClick={() => this.switchTagDisp(tagDisp)}
         style={{textAlign:"center"}}
       >
-        <Search />
+        <Search fontSize="large"/>
       </TagButton>
     ) :
     null;
@@ -303,7 +303,7 @@ class Articles extends Component {
 
     return (
       <div className={"articleSec articleSec-"+type}>
-        <h1 className='title'>{title}{tagSearch}</h1>
+        <h2 className='title'>{title}{tagSearch}</h2>
         <Fade right collapse when={tags !== false && tagDisp !== false} duration={2000}>
           <div className="tagSelectors">
             {tagSelectors}

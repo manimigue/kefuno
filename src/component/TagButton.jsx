@@ -1,8 +1,10 @@
 import React from 'react'
 import '../sass/button/tagButton.scss'
 
-export default (props) => {
+const TagButton = (props) => {
   return (
     <button {...props} className={'tagButton ' + props.className}/>
   )
 }
+
+export default TagButton

@@ -30,7 +30,7 @@ const paths = {
   'kefunoStyle.zip' : A2
 }
 
-export default () => {
+const NewsArticle = () => {
   const [markdown, setMarkdown] = useState('loading...')
 
   useEffect(() => {
@@ -52,3 +52,5 @@ export default () => {
     />
   )
 }
+
+ export default NewsArticle

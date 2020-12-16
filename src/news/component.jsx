@@ -7,7 +7,7 @@ import news3_20200919 from './articles/news3_20200919'
 import demo1 from './articles/demo1'
 import news8_20200926 from './articles/news8_20200926'
 
-export default [
+ const newsComponents = [
   { url: 'news4_20200918demo4', component: news4_20200918demo4 },
   { url: 'news7_20200921', component: news7_20200921 },
   { url: 'news6_20200921', component: news6_20200921 },
@@ -17,3 +17,5 @@ export default [
   { url: 'demo1', component: demo1 },
   { url: 'news8_20200926', component: news8_20200926 }
 ]
+
+export default newsComponents

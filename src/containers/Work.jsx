@@ -4,11 +4,11 @@ import Image_webp from '../img/kefuno_image01.webp'
 import Image_jpg from '../img/kefuno_image01.jpg'
 import '../sass/main/work.scss'
 
-export default () => {
+const Work = () => {
   return (
     <div className="work">
-      <h1 className="title">Work</h1>
-      <h2>月に惑ふ</h2>
+      <h2 className="title">Work</h2>
+      <h4>月に惑ふ</h4>
       <picture alt="kefuno. Home" className="topImage">
         <source srcSet={Image_webp} type="image/webp" />
         <img src={Image_jpg} alt="kefuno. Home"/>
@@ -20,3 +20,5 @@ export default () => {
     </div>
   )
 }
+
+export default Work

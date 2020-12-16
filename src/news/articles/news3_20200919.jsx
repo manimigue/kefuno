@@ -6,7 +6,7 @@ const paths = {
   'logo512.png' : I0
 }
 
-export default () => {
+const NewsArticle = () => {
   const [markdown, setMarkdown] = useState('loading...')
 
   useEffect(() => {
@@ -28,3 +28,5 @@ export default () => {
     />
   )
 }
+
+ export default NewsArticle
