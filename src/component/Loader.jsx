@@ -9,8 +9,8 @@ const Loader = () => {
     <div className="loader">
       <img className="load-logo" src={Logo} alt="Loading..."/>
       <Spinner
-         type="Circles"
-         color="#00BFFF"
+         type="BallTriangle"
+         color="#8d8f8f"
          height={100}
          width={100}
  

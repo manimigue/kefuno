@@ -1,7 +1,11 @@
 @use '../mixin/color';
+@use '../header/var';
 
 $color: color.$bright;
 $background: color.$dark;
+
+$height-l: var.$height-l;
+$height-s: var.$height-s;
 
 .home {
   .topVideo {
@@ -30,12 +34,14 @@ $background: color.$dark;
   .topImage {
     width: 100%;
     height: calc( 100vw / 1080 * 1920);
+    margin-top: -$height-s;
     margin-bottom: 10px;
     background-position: center center;
     background-repeat: no-repeat;
   }
   &.pc .topImage {
     height: calc( 100vw / 1920 * 1080);
+    margin-top: -$height-l;
   }
 }
 

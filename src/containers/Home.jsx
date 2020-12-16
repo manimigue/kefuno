@@ -7,8 +7,8 @@ import {selectPlayed, savePlayed} from '../store/video'
 
 import News from './News'
 
-import Pic from '../img/kefuno_image01.webp'
-import Pic_jpg from '../img/kefuno_image01.jpg'
+import Thumb_mobile from '../img/thumb_mobile.jpg'
+import Thumb_pc from '../img/thumb_pc.jpg'
 import Video_mobile from  '../video/mobile.mov'
 import Video_pc from  '../video/pc.mov'
 
@@ -28,8 +28,7 @@ const Home = () => {
   const mobile = width >= 720 ? false : true
 
   const Video = mobile ?  Video_mobile : Video_pc 
-  console.log(window.innerWidth);
-  console.log(Video);
+  const Pic = mobile ? Thumb_mobile : Thumb_pc
 
   useEffect(() => {
     window.addEventListener("resize", ()=>setWidth(window.innerWidth))
@@ -60,8 +59,7 @@ const Home = () => {
         </button> */}
       </div>}
       <picture alt="kefuno. Home">
-        <source srcSet={Pic} type="image/webp" />
-        <img className="topImage" src={Pic_jpg} alt="kefuno. Home"/>
+        <img className="topImage" src={Pic} alt="kefuno. Home"/>
       </picture>
       <News />
       <div className="twitterContainer">

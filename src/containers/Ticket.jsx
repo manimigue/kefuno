@@ -12,7 +12,7 @@ class Tickets extends Component {
     super(props);
     this.state = {
       ticketTypeNum : 1,
-      on : "on",
+      on : "infoCommingSoon",
     };
   }
 
@@ -59,7 +59,7 @@ class Tickets extends Component {
   }
 
   render() {
-    const mail = "orchestra.musicart.ticket@gmail.com";
+    const mail = "kefuno2019@gmail.com";
     const ticketTypeNum = this.state.ticketTypeNum;
     const on = this.state.on;
     const ticketSelect = (type) => (

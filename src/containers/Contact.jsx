@@ -9,7 +9,7 @@ class Contact extends Component {
   }
 
   render(){
-    const mail = "manimigue0701@gmail.com";
+    const mail = "kefuno2019@gmail.com";
     return (
       <div className="contact-form">
         <Helmet>
