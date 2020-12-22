@@ -1,9 +1,5 @@
-@use '../mixin/color';
 @use '../header/var';
 @use '../mixin/window';
-
-$color: color.$bright;
-$background: color.$dark;
 
 $height-l: var.$height-l;
 $height-s: var.$height-s;
