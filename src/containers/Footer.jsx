@@ -26,9 +26,6 @@ const Footer = () => {
 
   return (
     <footer ref={ref}>
-      <div className='footerTop'>
-        <div className="title"><h2>kefuno.</h2></div>
-      </div>
       <div className='footerLinks'>
         <ul>{lists}{width > multiLineLinkLimmit ? null : spaces}</ul>
           {/* <img src={Logo} alt='Mμsicart' size='60%' onClick={() => this.props.linkToPage('Route','/')}/>

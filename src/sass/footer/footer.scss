@@ -16,12 +16,6 @@ footer {
   flex-flow: column;
   color: $dark;
   width: 100%;
-  .footerTop {
-    width: 90%;
-    @include window.minmax {
-      width: $ul-width;
-    }
-  }
 
   .footerLinks {
     width: 100%;
