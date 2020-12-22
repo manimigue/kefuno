@@ -64,7 +64,7 @@ const Home = () => {
       <News />
       <div className="twitterContainer">
         <Suspense fallback={<Skeleton width="100%" height="100%"/>} >
-          <Twitter account='twitter'/>
+          <Twitter account='kefuno_tsuki'/>
         </Suspense>
       </div>
     </div>
