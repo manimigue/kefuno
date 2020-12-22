@@ -6,11 +6,14 @@ import useDimensions from "react-use-dimensions";
 import Link from '../component/Link';
 import links from '../data/links';
 
-import vars from '../sass/footer/footer.scss';
+// import vars from '../sass/footer/footer.scss';
+//  現在，この機構は動いていない。
+import '../sass/footer/footer.scss';
 
 const Footer = () => {
   const [ref, { width }] = useDimensions();
-  const multiLineLinkLimmit = parseInt(vars.totalWidth,10) * links.length * 100 / parseInt(vars.ulWidth,10)
+  const multiLineLinkLimmit = (100 + 10 * 2 ) * links.length * 100 / 80// : 
+  // parseInt(vars.totalWidth,10) * links.length * 100 / parseInt(vars.ulWidth,10);
 
   const lists = links.map(link => (
     <Link 

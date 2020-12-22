@@ -7,6 +7,7 @@ $bright: color.$bright;
 $link-width: 100px;
 $link-margin-side: 10px;
 $ul-width: 80%;
+// css-loaderの変更でexportが動いていない。JSXへの反映が必要
 
 footer {
   background-color: $bright;
