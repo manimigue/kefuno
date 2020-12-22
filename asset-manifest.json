@@ -2,9 +2,9 @@
   "files": {
     "static/js/0.d03bb73e.chunk.js": "/kefuno/static/js/0.d03bb73e.chunk.js",
     "static/js/0.d03bb73e.chunk.js.map": "/kefuno/static/js/0.d03bb73e.chunk.js.map",
-    "main.css": "/kefuno/static/css/main.748a3731.chunk.css",
-    "main.js": "/kefuno/static/js/main.11219563.chunk.js",
-    "main.js.map": "/kefuno/static/js/main.11219563.chunk.js.map",
+    "main.css": "/kefuno/static/css/main.6b4facff.chunk.css",
+    "main.js": "/kefuno/static/js/main.1155cc5f.chunk.js",
+    "main.js.map": "/kefuno/static/js/main.1155cc5f.chunk.js.map",
     "reactPlayerDailyMotion.js": "/kefuno/static/js/reactPlayerDailyMotion.0b1d00c7.chunk.js",
     "reactPlayerDailyMotion.js.map": "/kefuno/static/js/reactPlayerDailyMotion.0b1d00c7.chunk.js.map",
     "reactPlayerFacebook.js": "/kefuno/static/js/reactPlayerFacebook.83d13111.chunk.js",
@@ -60,7 +60,7 @@
     "static/css/20.a4210e9d.chunk.css.map": "/kefuno/static/css/20.a4210e9d.chunk.css.map",
     "static/css/21.f3d3a90e.chunk.css.map": "/kefuno/static/css/21.f3d3a90e.chunk.css.map",
     "static/css/22.526bb6f4.chunk.css.map": "/kefuno/static/css/22.526bb6f4.chunk.css.map",
-    "static/css/main.748a3731.chunk.css.map": "/kefuno/static/css/main.748a3731.chunk.css.map",
+    "static/css/main.6b4facff.chunk.css.map": "/kefuno/static/css/main.6b4facff.chunk.css.map",
     "static/js/15.f6e94733.chunk.js.LICENSE.txt": "/kefuno/static/js/15.f6e94733.chunk.js.LICENSE.txt",
     "static/js/16.1979dd4b.chunk.js.LICENSE.txt": "/kefuno/static/js/16.1979dd4b.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/kefuno/static/media/baskvl.522d6e13.woff",
@@ -100,7 +100,7 @@
   "entrypoints": [
     "static/js/runtime-main.df273865.js",
     "static/js/15.f6e94733.chunk.js",
-    "static/css/main.748a3731.chunk.css",
-    "static/js/main.11219563.chunk.js"
+    "static/css/main.6b4facff.chunk.css",
+    "static/js/main.1155cc5f.chunk.js"
   ]
 }
