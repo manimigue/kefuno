@@ -1,5 +1,6 @@
 @use '../mixin/color';
 @use '../header/var';
+@use '../mixin/window';
 
 $color: color.$bright;
 $background: color.$dark;
@@ -38,10 +39,12 @@ $height-s: var.$height-s;
     margin-bottom: 10px;
     background-position: center center;
     background-repeat: no-repeat;
+    @include window.minsmall{
+      margin-top: -$height-l;
+    }
   }
   &.pc .topImage {
     height: calc( 100vw / 1920 * 1080);
-    margin-top: -$height-l;
   }
 }
 
