@@ -8,7 +8,7 @@ import re
 from datetime import date
 
 def compile():
-  id = max([log["id"] for log in logs]) + 1
+  id = max([log["id"] for log in logs] + [0]) + 1
   url = "news" + str(id) + "_" + config["url"]
 
   with open(md_path, 'r') as f:
