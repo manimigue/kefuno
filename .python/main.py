@@ -34,6 +34,8 @@ def compile():
         print(asset,"は既に",copied_origin,"アップロード時に追加されています")
       else:
         raise FileNotFoundError(asset + "が見つかりませんでした。")
+    elif asset in copy_assets:
+      pass
     else:
       copy_assets.append(asset)
   
@@ -41,7 +43,7 @@ def compile():
   for asset in copy_assets:
     try:
       asset_path = os.path.join(assets_path,asset)
-      shutil.copy2(asset_path, os.path.join(articles_path,"assets"))
+      shutil.copy2(asset_path, os.path.join(markdowns_path,"assets"))
     except FileNotFoundError: #以前のループでチェックしているが，念のため
       raise FileNotFoundError("assetsが見つからないないため，",asset,"がアップロードできません")
     else:
