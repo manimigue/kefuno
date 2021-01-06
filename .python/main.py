@@ -180,7 +180,7 @@ if __name__ == "__main__":
   articles = [os.path.splitext(article)[0] for article in os.listdir(articles_path) if os.path.splitext(article)[1] == ".jsx"]
   components_imports = "\n".join(["import " + article + " from './articles/" + article + "'" for article in articles])
   components_exports = ",\n".join(["  { url: '" + article + "', component: " + article + " }" for article in articles])
-  components = "\n".join([components_imports, "", "export default [", components_exports, "]"])
+  components = "\n".join([components_imports, "", "const newsComponents = [", components_exports, "]","export default newsComponents"])
 
   with open(components_path,'w') as f:
     f.write(components)
