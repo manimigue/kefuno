@@ -53,6 +53,8 @@ def compile():
   
   with open(os.path.join(python_path,"react_imports.txt"),'r') as f:
     import_react = f.read()
+
+  import_react = import_react.replace("NEWARTICLE","../markdown/" + os.path.split(md_path)[1])
   
   import_assets = "\n".join(["import I" + str(i) +" from '../markdown/assets/" + asset + "'" for i, asset in enumerate(copy_assets) ])
   dicts = ",\n".join(["  '" + asset + "' : I" + str(i) for i, asset in enumerate(copy_assets) ])
@@ -61,8 +63,6 @@ def compile():
 
   with open(os.path.join(python_path,"react_component.txt")) as f:
     article_component = f.read()
-  
-  article_component = article_component.replace("NEWARTICLE","../markdown/" + os.path.split(md_path)[1])
 
   article = "\n".join([article_top,'',article_component])
   article_path = os.path.join(articles_path,url + ".jsx")

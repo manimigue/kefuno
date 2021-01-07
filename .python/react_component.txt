@@ -2,7 +2,6 @@ const NewsArticle = () => {
   const [markdown, setMarkdown] = useState('loading...')
 
   useEffect(() => {
-    const path = require("NEWARTICLE");
 
     fetch(path)
     .then(response => {
