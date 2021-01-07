@@ -3,8 +3,8 @@
     "static/js/0.4cc84a0e.chunk.js": "/kefuno/static/js/0.4cc84a0e.chunk.js",
     "static/js/0.4cc84a0e.chunk.js.map": "/kefuno/static/js/0.4cc84a0e.chunk.js.map",
     "main.css": "/kefuno/static/css/main.0ae6debb.chunk.css",
-    "main.js": "/kefuno/static/js/main.6ab9918c.chunk.js",
-    "main.js.map": "/kefuno/static/js/main.6ab9918c.chunk.js.map",
+    "main.js": "/kefuno/static/js/main.27fe239e.chunk.js",
+    "main.js.map": "/kefuno/static/js/main.27fe239e.chunk.js.map",
     "reactPlayerDailyMotion.js": "/kefuno/static/js/reactPlayerDailyMotion.4ff14c23.chunk.js",
     "reactPlayerDailyMotion.js.map": "/kefuno/static/js/reactPlayerDailyMotion.4ff14c23.chunk.js.map",
     "reactPlayerFacebook.js": "/kefuno/static/js/reactPlayerFacebook.6fdb5d9a.chunk.js",
@@ -29,8 +29,8 @@
     "reactPlayerWistia.js.map": "/kefuno/static/js/reactPlayerWistia.0182c175.chunk.js.map",
     "reactPlayerYouTube.js": "/kefuno/static/js/reactPlayerYouTube.77abb87e.chunk.js",
     "reactPlayerYouTube.js.map": "/kefuno/static/js/reactPlayerYouTube.77abb87e.chunk.js.map",
-    "runtime-main.js": "/kefuno/static/js/runtime-main.a6785190.js",
-    "runtime-main.js.map": "/kefuno/static/js/runtime-main.a6785190.js.map",
+    "runtime-main.js": "/kefuno/static/js/runtime-main.43dbfdcc.js",
+    "runtime-main.js.map": "/kefuno/static/js/runtime-main.43dbfdcc.js.map",
     "static/js/15.f8cce2d6.chunk.js": "/kefuno/static/js/15.f8cce2d6.chunk.js",
     "static/js/15.f8cce2d6.chunk.js.map": "/kefuno/static/js/15.f8cce2d6.chunk.js.map",
     "static/js/16.0ecc435a.chunk.js": "/kefuno/static/js/16.0ecc435a.chunk.js",
@@ -42,14 +42,14 @@
     "static/js/18.9f94cd59.chunk.js": "/kefuno/static/js/18.9f94cd59.chunk.js",
     "static/js/18.9f94cd59.chunk.js.map": "/kefuno/static/js/18.9f94cd59.chunk.js.map",
     "static/css/19.e42d9abb.chunk.css": "/kefuno/static/css/19.e42d9abb.chunk.css",
-    "static/js/19.698720f1.chunk.js": "/kefuno/static/js/19.698720f1.chunk.js",
-    "static/js/19.698720f1.chunk.js.map": "/kefuno/static/js/19.698720f1.chunk.js.map",
+    "static/js/19.02110322.chunk.js": "/kefuno/static/js/19.02110322.chunk.js",
+    "static/js/19.02110322.chunk.js.map": "/kefuno/static/js/19.02110322.chunk.js.map",
     "static/css/20.a4210e9d.chunk.css": "/kefuno/static/css/20.a4210e9d.chunk.css",
     "static/js/20.6a037848.chunk.js": "/kefuno/static/js/20.6a037848.chunk.js",
     "static/js/20.6a037848.chunk.js.map": "/kefuno/static/js/20.6a037848.chunk.js.map",
     "static/css/21.f3d3a90e.chunk.css": "/kefuno/static/css/21.f3d3a90e.chunk.css",
-    "static/js/21.e1f2ed9b.chunk.js": "/kefuno/static/js/21.e1f2ed9b.chunk.js",
-    "static/js/21.e1f2ed9b.chunk.js.map": "/kefuno/static/js/21.e1f2ed9b.chunk.js.map",
+    "static/js/21.504ea1db.chunk.js": "/kefuno/static/js/21.504ea1db.chunk.js",
+    "static/js/21.504ea1db.chunk.js.map": "/kefuno/static/js/21.504ea1db.chunk.js.map",
     "static/css/22.526bb6f4.chunk.css": "/kefuno/static/css/22.526bb6f4.chunk.css",
     "static/js/22.16747e18.chunk.js": "/kefuno/static/js/22.16747e18.chunk.js",
     "static/js/22.16747e18.chunk.js.map": "/kefuno/static/js/22.16747e18.chunk.js.map",
@@ -72,9 +72,9 @@
     "static/media/thumb_pc.32879084.jpg": "/kefuno/static/media/thumb_pc.32879084.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a6785190.js",
+    "static/js/runtime-main.43dbfdcc.js",
     "static/js/15.f8cce2d6.chunk.js",
     "static/css/main.0ae6debb.chunk.css",
-    "static/js/main.6ab9918c.chunk.js"
+    "static/js/main.27fe239e.chunk.js"
   ]
 }
