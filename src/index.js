@@ -29,7 +29,7 @@ watchForHover()
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router history={history} basename='/kefuno'>
+      <Router history={history}>
         <App strapiRoot="https://kefuno-strapi.gq/"/>
       </Router>
     </Provider>
