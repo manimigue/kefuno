@@ -1,0 +1,2 @@
+(this.webpackJsonpkefuno=this.webpackJsonpkefuno||[]).push([[17],{725:function(e,t,n){},730:function(e,t,n){"use strict";n.r(t);var o=n(1),s=(n(0),n(726));n(725);t.default=function(e){var t=e.account;return Object(o.jsx)("div",{className:"twitter",children:Object(o.jsx)(s.a,{sourceType:"profile",screenName:t,options:{width:"100%",height:500},theme:"light",transparent:!0,noFooter:!0})})}}}]);
+//# sourceMappingURL=17.c8da04db.chunk.js.map
