@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import MarkdownRender from "@nteract/markdown";
-import path from "../markdown/月に惑ふ #1 について.md";
+import path from "../markdown/月に惑ふ ＃1 について.md";
 import replace_assets from '../../article/replace_assets';
 
 const paths = {
