@@ -1,38 +1,48 @@
 [
   {
-    "copied": [
-      "kefuno_image02.jpg"
-    ],
+    "file": "news1_ホームページを開設しました",
     "tag": [
       "お知らせ"
     ],
     "title": "ホームページを開設しました",
-    "author": "koseimaeda",
-    "date": "2021-01-07",
-    "file": "news1_ホームページを開設しました",
     "url": "news1_20210107",
+    "author": "koseimaeda",
+    "copied": [
+      "kefuno_image02.jpg"
+    ],
+    "date": "2021-01-07",
     "id": 1
   },
   {
-    "copied": [],
+    "file": "news4_「月に惑ふ」配信にあたって",
     "tag": [
       "お知らせ"
     ],
     "title": "「月に惑ふ」配信にあたって",
-    "url": "news2_20210114",
-    "date": "2021-01-14",
-    "file": "news4_「月に惑ふ」配信にあたって",
     "author": "Kosei Maeda",
+    "url": "news2_20210114",
+    "copied": [],
+    "date": "2021-01-14",
     "id": 2
   },
   {
-    "copied": [],
+    "file": "news4_月に惑ふ #1 について",
     "tag": [],
     "title": "月に惑ふ #1 について",
-    "author": "Kosei Maeda",
-    "date": "2021-02-05",
-    "file": "news4_月に惑ふ #1 について",
     "url": "news3_20210205",
+    "author": "Kosei Maeda",
+    "copied": [],
+    "date": "2021-02-05",
     "id": 3
+  },
+  {
+    "file": "news4_月に惑ふ #2 について",
+    "tag": [],
+    "title": "月に惑ふ #2 について",
+    "url": "news4_20210205",
+    "author": "Kosei Maeda",
+    "copied": [],
+    "date": "2021-02-05",
+    "id": 4
   }
 ]
