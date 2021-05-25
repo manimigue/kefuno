@@ -1,118 +1,131 @@
 [
   {
-    "id": 1,
-    "date": "2021-01-07",
-    "url": "news1_20210107",
-    "title": "ホームページを開設しました",
     "file": "news1_ホームページを開設しました",
     "tag": [
       "お知らせ"
     ],
     "author": "koseimaeda",
+    "title": "ホームページを開設しました",
     "copied": [
       "kefuno_image02.jpg"
-    ]
+    ],
+    "url": "news1_20210107",
+    "id": 1,
+    "date": "2021-01-07"
   },
   {
-    "id": 2,
-    "date": "2021-01-14",
-    "url": "news2_20210114",
-    "title": "「月に惑ふ」配信にあたって",
     "file": "news4_「月に惑ふ」配信にあたって",
     "tag": [
       "お知らせ"
     ],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "「月に惑ふ」配信にあたって",
+    "copied": [],
+    "url": "news2_20210114",
+    "id": 2,
+    "date": "2021-01-14"
   },
   {
-    "id": 3,
-    "date": "2021-02-05",
-    "url": "news3_20210205",
-    "title": "月に惑ふ #1 について",
     "file": "news4_月に惑ふ #1 について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ #1 について",
+    "copied": [],
+    "url": "news3_20210205",
+    "id": 3,
+    "date": "2021-02-05"
   },
   {
-    "id": 4,
-    "date": "2021-02-05",
-    "url": "news4_20210205",
-    "title": "月に惑ふ #2 について",
     "file": "news4_月に惑ふ #2 について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ #2 について",
+    "copied": [],
+    "url": "news4_20210205",
+    "id": 4,
+    "date": "2021-02-05"
   },
   {
-    "id": 5,
-    "date": "2021-02-20",
-    "url": "news5_20210220",
-    "title": "月に惑ふ_3について",
     "file": "news4_月に惑ふ_3について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ_3について",
+    "copied": [],
+    "url": "news5_20210220",
+    "id": 5,
+    "date": "2021-02-20"
   },
   {
-    "id": 6,
-    "date": "2021-03-13",
-    "url": "news6_20210313",
-    "title": "月に惑ふ_4について",
     "file": "news4_月に惑ふ_4について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ_4について",
+    "copied": [],
+    "url": "news6_20210313",
+    "id": 6,
+    "date": "2021-03-13"
   },
   {
-    "id": 7,
-    "date": "2021-03-27",
-    "url": "news7_20210327",
-    "title": "月に惑ふ_5について",
     "file": "news4_月に惑ふ_5について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ_5について",
+    "copied": [],
+    "url": "news7_20210327",
+    "id": 7,
+    "date": "2021-03-27"
   },
   {
-    "id": 8,
-    "date": "2021-04-12",
-    "url": "news8_20210412",
-    "title": "月に惑ふ_6について",
     "file": "news4_月に惑ふ_6について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ_6について",
+    "copied": [],
+    "url": "news8_20210412",
+    "id": 8,
+    "date": "2021-04-12"
   },
   {
-    "id": 9,
-    "date": "2021-04-21",
-    "url": "news9_20210421",
-    "title": "月に惑ふ_7について",
     "file": "news4_月に惑ふ_7について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ_7について",
+    "copied": [],
+    "url": "news9_20210421",
+    "id": 9,
+    "date": "2021-04-21"
   },
   {
-    "id": 10,
-    "date": "2021-04-30",
-    "url": "news10_20210430",
-    "title": "月に惑ふ_8について",
     "file": "news4_月に惑ふ_8について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ_8について",
+    "copied": [],
+    "url": "news10_20210430",
+    "id": 10,
+    "date": "2021-04-30"
   },
   {
-    "date": "2021-05-25",
-    "id": 11,
-    "url": "news11_20210525",
-    "title": "月に惑ふ_9について",
     "file": "news4_月に惑ふ_9について",
     "tag": [],
     "author": "Kosei Maeda",
-    "copied": []
+    "title": "月に惑ふ_9について",
+    "copied": [],
+    "url": "news11_20210525",
+    "id": 11,
+    "date": "2021-05-25"
+  },
+  {
+    "file": "news4_レコーディングの様子",
+    "tag": [],
+    "author": "Kosei Maeda",
+    "title": "レコーディングの様子",
+    "url": "news12_20210525",
+    "copied": [
+      "IMG_6252-1903301.jpg",
+      "IMG_6255-1903307.jpg"
+    ],
+    "id": 12,
+    "date": "2021-05-25"
   }
 ]

@@ -1,3 +1,4 @@
+import news12_20210525 from './articles/news12_20210525'
 import news11_20210525 from './articles/news11_20210525'
 import news3_20210205 from './articles/news3_20210205'
 import news5_20210220 from './articles/news5_20210220'
@@ -11,6 +12,7 @@ import news1_20210107 from './articles/news1_20210107'
 import news9_20210421 from './articles/news9_20210421'
 
 const newsComponents = [
+  { url: 'news12_20210525', component: news12_20210525 },
   { url: 'news11_20210525', component: news11_20210525 },
   { url: 'news3_20210205', component: news3_20210205 },
   { url: 'news5_20210220', component: news5_20210220 },
